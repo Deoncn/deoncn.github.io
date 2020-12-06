@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://deoncn.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-12-06T20:38:36.451Z</updated>
+    <title>Front man</title>
+    <updated>2020-12-06T21:15:03.797Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://deoncn.github.io"/>
     <link rel="self" href="http://deoncn.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
     <logo>http://deoncn.github.io/images/avatar.png</logo>
     <icon>http://deoncn.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, Front man</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>http://deoncn.github.io/post/hello-gridea/</id>
-        <link href="http://deoncn.github.io/post/hello-gridea/">
+        <id>http://deoncn.github.io/hello-gridea/</id>
+        <link href="http://deoncn.github.io/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
