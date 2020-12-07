@@ -1,11 +1,11 @@
 encoding: utf-8
 
 # SEO相关信息
-title: TMaize Blog
-description: TMaize的个人博客
-keywords: TMaize,Blog,Java,Html,JavaScript
-author: TMaize
-footerText: 'Copyright © 2016 皖ICP备16016174号'
+title: 川白的博客
+description: 川白的个人博客
+keywords: Deon,Blog,Java,Html,JavaScript,川白
+author: 川白
+footerText: 'Copyright © 2020 陕ICP备2020017789号'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -20,7 +20,7 @@ domainUrl: 'http://deoncn.top'
 baseurl: ''
 
 # 吐个槽地址，会在chat页面中重定向到该地址
-tucaoUrl: https://support.qq.com/product/86335
+tucaoUrl: https://support.qq.com/products/297659
 
 # 菜单
 menu:
