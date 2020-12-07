@@ -1,0 +1,61 @@
+﻿# Word 插入代码块过程
+
+------
+
+> * 问题：用于Word各种代码块的插入问题
+> * 解决方案：网站复制粘贴
+> * 撰写：记录解决过程
+
+------
+## 问题发现/总结
+今天老师给我的任务是让我把论文里的图片全部换成代码块。我一个一个手打就很累，还不知道要去哪里找到合适的格式。就发现了一个[网站](http://www.planetb.ca/syntax-highlight-word)
+我通过将代码输入到此网站里，然后生成代码高亮的文本，然后复制粘贴到Word里实现代码块的插入。
+经过我的试用，我发现此方法比较好用，在此推荐给大家。如果以后找到新的代码块插入方式我会更新另一篇文章。
+
+效果图如下
+![DvfY6S.png](https://s3.ax1x.com/2020/12/07/DvfY6S.png)
+
+------
+## 解决方案/步骤
+
+### 步骤一
+打开这个代码高亮工具网站：[代码高亮工具站](http://www.planetb.ca/syntax-highlight-word)
+在代码框中粘贴代码，选择语言，点击Show Highlighted
+![DvfY6S.png](https://s3.ax1x.com/2020/12/07/DvfGSf.md.png)
+
+
+复制生成的代码段
+![此处输入图片的描述][1]
+### 步骤二
+在 Microsoft Word 选择“插入”选项卡，再点击对象
+![此处输入图片的描述][2]
+
+在弹出的窗口上选择“OpenDocument文本”
+![此处输入图片的描述][3]
+
+在新弹出的word窗口里之前生成的粘贴代码段
+![此处输入图片的描述][4]
+
+保存后关闭新弹出的word窗口即可看到代码被优雅的插入了🤭
+![此处输入图片的描述][5]
+
+------
+
+## 结尾
+感谢您花费时间阅读这篇文章。
+
+作者 [川白](https://deoncn.top)     
+2020 年 12月 07日    
+
+[^LaTeX]: 支持 **LaTeX** 编辑显示支持，例如：$\sum_{i=1}^n a_i=0$， 访问 [MathJax][7] 参考更多使用方法。
+
+[^code]: 代码高亮功能支持包括 Java, Python, JavaScript 在内的，**四十一**种主流编程语言。
+
+
+  [1]: https://s3.ax1x.com/2020/12/07/Dvf3fP.md.png
+  [2]: https://s3.ax1x.com/2020/12/07/DvhucT.md.png
+  [3]: https://s3.ax1x.com/2020/12/07/DvflFI.png
+  [4]: https://s3.ax1x.com/2020/12/07/Dvf1Yt.md.png
+  [5]: https://s3.ax1x.com/2020/12/07/DvfJl8.md.png
+  [6]: http://weibo.com/ghosert
+  [7]: http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
