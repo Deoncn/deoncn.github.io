@@ -17,8 +17,5 @@ title: 友情链接
   <li>
     <p><a href="{{ link.url }}" title="{{ link.desc }}" target="_blank" >{{ link.title }}</a></p>
   </li>
-    <li>
-    <p><a href="{https://rain.moimo.me}" title="{moi的一般通过小站}" target="_blank" >{M E S}</a></p>
-  </li>
   {%- endfor %}
 </ul>
