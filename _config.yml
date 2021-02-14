@@ -26,12 +26,14 @@ tucaoUrl: https://support.qq.com/products/297659
 menu:
   - title: 首页
     url: /
-  - title: 归类
-    url: /pages/categories.html
+#  - title: 归类
+#   url: /pages/categories.html
   - title: 搜索
     url: /pages/search.html
   - title: 友链
     url: /pages/links.html
+#  - title: 留言
+#    url: /page/chat.html
   - title: 关于
     url: /pages/about.html
 
