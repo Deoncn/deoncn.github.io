@@ -1,7 +1,7 @@
 ﻿---
 layout: mypost
 title: 部署kodexplorer私有云盘
-categories: [Ubuntu]
+categories: [收藏夹]
 ---
 # Ubuntu服务器上部署kodexplorer私有云盘
 
