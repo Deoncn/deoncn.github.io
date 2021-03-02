@@ -48,3 +48,6 @@ ss/ssr的目的就是用来翻墙的，而vpn的目的是用来加密企业数�
 总结一下：
 就翻墙来说，推荐大家使用ss/ssr，ss/ssr的成本是非常低的，低至一年25块钱（也许还有更低的只是我没发现？），vpn的价格，用过的都知道。
 而且就翻墙效果来说大部分地区ss/ssr是比vpn好的。​
+
+
+#原文 👉 [https://deeponion.org/](https://deeponion.org/community/threads/vpnss-ssr.901/)
