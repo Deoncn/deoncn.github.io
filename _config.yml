@@ -2,7 +2,7 @@ encoding: utf-8
 
 # SEO相关信息
 title: Deon's blog
-description: 这该死的川川。
+description: 博客
 keywords: Deon,Blog,Java,Html,JavaScript,川白
 author: 川白
 footerText: 'Copyright © 2020 '
@@ -38,7 +38,7 @@ menu:
     url: /pages/about.html
 
 # 点击页面文字冒出特效,不需要请设置为false
-extClickEffect: true
+extClickEffect: false
 
 # Google Adsense,不需要请设置为false
 # _includes/ext-adsense.html 里面修改为自己的配置
