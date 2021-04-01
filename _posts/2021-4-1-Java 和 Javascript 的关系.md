@@ -6,6 +6,10 @@ categories: [收藏夹]
 
 # _Java_ 和 *Javascript* 的关系
 
+写这篇文章是因为在知乎上看到有人问这个问题，在想怎么会有这种 SB 问题，不过想想当初SB的我貌似也搞不清两者的关系，认知还是需要一个过程。
+
+然后看到比较经典的回答有：Java 和 Javascript 的关系就像雷锋和雷峰塔的关系，也像老婆和老婆饼的关系。
+
 ![](https://z3.ax1x.com/2021/04/01/cV7Iwd.jpg)
 
 一般认为，当时 Netscape 之所以将 LiveScript 命名为 JavaScript，是因为 Java 是当时最流行的编程语言，带有 "Java" 的名字有助于这门新生语言的传播。
