@@ -8,6 +8,8 @@
 
 一般提交到 github 过个几十秒就可以看到效果，如果你需要对在本地查看效果需要安装 ruby 环境和依赖
 
+Hello 
+
 ```bash
 # linux下需要gcc
 
