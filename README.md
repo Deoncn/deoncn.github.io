@@ -1,8 +1,31 @@
 # 介绍
 
-mojombo 主题 自我魔改版（[GitHub 地址](https://github.com/mojombo/mojombo.github.io)），简洁纯净(主题资源请求<20KB)。
+一款 jekyll 主题（[GitHub 地址](https://github.com/TMaize/tmaize-blog)），简洁纯净(主题资源请求<20KB)，未引入任何框架，秒开页面，支持自适应，支持全文检索
 
-原作者博客：[Tom Preston-Werner](mojombo.github.io)
+原作者博客：[TMaize Blog](http://blog.tmaize.net/)
+
+# 本地运行
+
+一般提交到 github 过个几十秒就可以看到效果，如果你需要对在本地查看效果需要安装 ruby 环境和依赖
+
+```bash
+# linux下需要gcc
+
+# gem sources --add https://gems.ruby-china.com/
+# gem sources --remove https://rubygems.org/
+# gem sources --remove https://mirrors.aliyun.com/rubygems/
+# gem sources -l
+gem install bundler
+# bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+bundle install
+```
+
+通过下面命令启动/编译项目
+
+```bash
+bundle exec jekyll serve --watch --host=127.0.0.1 --port=8080
+bundle exec jekyll build --destination=dist
+```
 
 # 项目配置
 
@@ -18,6 +41,7 @@ mojombo 主题 自我魔改版（[GitHub 地址](https://github.com/mojombo/mojo
 
 6. 网站的 logo 和 favicon 放在了`static/img/`下，替换即可，大小无所谓，图片比例最好是 1:1
 
+7. 如果是把项目 fork 过去的，想要删除我的提交记录可以先软重置到第一个提交，然后再提交一次，最后强制推送一次就行了
 
 # 使用
 
