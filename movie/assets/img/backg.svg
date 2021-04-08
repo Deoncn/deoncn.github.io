@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="215px" height="215px" viewBox="0 0 215 215" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="8.52651283e-14" y="3.55271368e-15" width="31.9999991" height="15.9999995"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="31.9999991" height="15.9999995" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="2.39999993" y="2.39999993" width="27.1999992" height="11.1999997"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="27.1999992" height="11.1999997" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="-7.10542736e-14" y="0" width="31.9999991" height="15.9999995"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="31.9999991" height="15.9999995" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="2.39999993" y="2.39999993" width="27.1999992" height="11.1999997"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="27.1999992" height="11.1999997" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="-7.10542736e-15" y="1.42108547e-14" width="20.7999994" height="30.3999991"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20.7999994" height="30.3999991" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="-5.68434189e-14" y="4.26325641e-14" width="20.7999994" height="30.3999991"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="20.7999994" height="30.3999991" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <polygon id="path-13" points="9.13624791 9.13624791 23.8107641 4.61076464 19.2852808 19.2852808 4.61076464 23.8107641"></polygon>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="19.1999995" height="19.1999995" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <polygon id="path-15" points="9.13624791 9.13624791 23.8107641 4.61076464 19.2852808 19.2852808 4.61076464 23.8107641"></polygon>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="19.1999995" height="19.1999995" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+    </defs>
+    <g id="mocks" stroke="none" stroke-width="0" fill="#4184F3" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="pattern">
+                <rect id="Rectangle-3" x="0" y="0" width="215" height="215"></rect>
+                <g id="Pattern_money" transform="translate(112.725363, 29.468511) rotate(-345.000000) translate(-112.725363, -29.468511) translate(96.725363, 21.468511)">
+                    <g id="Group" transform="translate(-0.000000, 0.000000)">
+                        <use id="Rectangle-3" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-2)" stroke-width="4" xlink:href="#path-1"></use>
+                        <use id="Rectangle-3-Copy" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                        <ellipse id="Oval-1" fill-opacity="0.15" fill="#000000" cx="15.9999995" cy="7.99999977" rx="3.19999991" ry="3.19999991"></ellipse>
+                        <ellipse id="Oval-1-Copy" fill-opacity="0.15" fill="#000000" cx="23.9999993" cy="7.99999977" rx="1.59999995" ry="1.59999995"></ellipse>
+                        <ellipse id="Oval-1-Copy-2" fill-opacity="0.15" fill="#000000" cx="7.99999977" cy="7.99999977" rx="1.59999995" ry="1.59999995"></ellipse>
+                    </g>
+                </g>
+                <g id="Pattern_money-Copy" transform="translate(186.656402, 162.128199) rotate(-30.000000) translate(-186.656402, -162.128199) translate(170.656402, 154.128199)">
+                    <g id="Group" transform="translate(0.000000, 0.000000)">
+                        <use id="Rectangle-3" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-6)" stroke-width="4" xlink:href="#path-5"></use>
+                        <use id="Rectangle-3-Copy" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-7"></use>
+                        <ellipse id="Oval-1" fill-opacity="0.15" fill="#000000" cx="15.9999995" cy="7.99999977" rx="3.19999991" ry="3.19999991"></ellipse>
+                        <ellipse id="Oval-1-Copy" fill-opacity="0.15" fill="#000000" cx="23.9999993" cy="7.99999977" rx="1.59999995" ry="1.59999995"></ellipse>
+                        <ellipse id="Oval-1-Copy-2" fill-opacity="0.15" fill="#000000" cx="7.99999977" cy="7.99999977" rx="1.59999995" ry="1.59999995"></ellipse>
+                    </g>
+                </g>
+                <g id="pattern_iphone" transform="translate(24.043267, 114.573391) rotate(-30.000000) translate(-24.043267, -114.573391) translate(13.543267, 99.073391)">
+                    <g id="Group" transform="translate(-0.000000, -0.000000)">
+                        <use id="Rectangle-3" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-10)" stroke-width="4" xlink:href="#path-9"></use>
+                        <rect id="Rectangle-3-Copy" fill-opacity="0.15" fill="#000000" x="3.19999991" y="3.19999991" width="14.3999996" height="19.1999995"></rect>
+                        <ellipse id="Oval-1" fill-opacity="0.15" fill="#000000" cx="10.3999997" cy="25.5999993" rx="1.59999995" ry="1.59999995"></ellipse>
+                    </g>
+                </g>
+                <g id="pattern_android" transform="translate(95.743264, 114.673391) rotate(-330.000000) translate(-95.743264, -114.673391) translate(85.243264, 99.173391)">
+                    <g id="Group-Copy" transform="translate(-0.000000, 0.000000)">
+                        <use id="Rectangle-3" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-12)" stroke-width="4" xlink:href="#path-11"></use>
+                        <rect id="Rectangle-3-Copy" fill-opacity="0.15" fill="#000000" x="3.19999991" y="3.19999991" width="14.3999996" height="19.1999995"></rect>
+                        <ellipse id="Oval-1" fill-opacity="0.15" fill="#000000" cx="10.3999997" cy="25.5999993" rx="1.59999995" ry="1.59999995"></ellipse>
+                        <polygon id="Path-1" fill-opacity="0.15" fill="#000000" points="6.39999982 23.9999993 3.19999991 25.5999993 6.39999982 27.1999992"></polygon>
+                        <rect id="Rectangle-7" fill-opacity="0.15" fill="#000000" x="14.3999996" y="23.9999993" width="3.19999991" height="3.19999991" rx="1"></rect>
+                    </g>
+                </g>
+                <g id="pattern_ad-badge" transform="translate(38.825317, 44.278202) rotate(-30.000000) translate(-38.825317, -44.278202) translate(26.325317, 36.278202)" fill-opacity="0.15" fill="#000000">
+                    <g id="ad-badge" transform="translate(-0.000000, -0.000000)">
+                        <path d="M5.32907052e-14,1.99406022 C5.32907052e-14,0.892771171 0.897296375,-2.84217094e-14 2.00848089,-2.84217094e-14 L22.7915184,-2.84217094e-14 C23.9007718,-2.84217094e-14 24.7999993,0.894513731 24.7999993,1.99406022 L24.7999993,14.0059393 C24.7999993,15.1072284 23.9027029,15.9999995 22.7915184,15.9999995 L2.00848089,15.9999995 C0.899227524,15.9999995 5.32907052e-14,15.1054858 5.32907052e-14,14.0059393 L5.32907052e-14,1.99406022 Z M10.7901868,10.4450298 L7.00984049,10.4450298 L6.1608119,12.7999996 L4.93374868,12.7999996 L8.37944135,3.77674688 L9.4205859,3.77674688 L12.8724759,12.7999996 L11.6516099,12.7999996 L10.7901868,10.4450298 Z M7.36928325,9.46585816 L10.4369413,9.46585816 L8.90001363,5.24550437 L7.36928325,9.46585816 Z M13.6285451,9.3914907 C13.6285451,8.36273558 13.8723027,7.53540578 14.3598252,6.90947646 C14.8473477,6.28354714 15.4856621,5.97058718 16.2747875,5.97058718 C17.0597814,5.97058718 17.6815698,6.23913368 18.1401715,6.77623475 L18.1401715,3.28096376 L19.28667,3.28096376 L19.28667,12.7999996 L18.2331308,12.7999996 L18.1773552,12.0811141 C17.7187536,12.6430045 17.0804392,12.9239454 16.2623929,12.9239454 C15.4856622,12.9239454 14.8525121,12.6058211 14.3629239,11.9695629 C13.8733356,11.3333047 13.6285451,10.5028763 13.6285451,9.47825274 L13.6285451,9.3914907 Z M14.7750436,9.52163377 C14.7750436,10.2818383 14.93204,10.8767721 15.2460375,11.306453 C15.5600351,11.7361338 15.993841,11.950971 16.5474682,11.950971 C17.2746204,11.950971 17.8055162,11.6245838 18.1401715,10.9717994 L18.1401715,7.89174676 C17.7972531,7.25962013 17.2704888,6.94356155 16.5598628,6.94356155 C15.9979725,6.94356155 15.5600351,7.16046449 15.2460375,7.59427689 C14.93204,8.02808929 14.7750436,8.67053516 14.7750436,9.52163377 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+                <g id="pattern_ad-badge-copy" transform="translate(123.578200, 192.825312) rotate(-300.000000) translate(-123.578200, -192.825312) translate(111.078200, 184.825312)" fill-opacity="0.15" fill="#000000">
+                    <g id="ad-badge" transform="translate(0.000000, -0.000000)">
+                        <path d="M0,1.99406022 C0,0.892771171 0.897296375,-1.42108547e-14 2.00848089,-1.42108547e-14 L22.7915184,-1.42108547e-14 C23.9007718,-1.42108547e-14 24.7999993,0.894513731 24.7999993,1.99406022 L24.7999993,14.0059393 C24.7999993,15.1072284 23.9027029,15.9999995 22.7915184,15.9999995 L2.00848089,15.9999995 C0.899227524,15.9999995 0,15.1054858 0,14.0059393 L0,1.99406022 Z M10.7901868,10.4450298 L7.00984049,10.4450298 L6.1608119,12.7999996 L4.93374868,12.7999996 L8.37944135,3.77674688 L9.4205859,3.77674688 L12.8724759,12.7999996 L11.6516099,12.7999996 L10.7901868,10.4450298 Z M7.36928325,9.46585816 L10.4369413,9.46585816 L8.90001363,5.24550437 L7.36928325,9.46585816 Z M13.6285451,9.3914907 C13.6285451,8.36273558 13.8723027,7.53540578 14.3598252,6.90947646 C14.8473477,6.28354714 15.4856621,5.97058718 16.2747875,5.97058718 C17.0597814,5.97058718 17.6815698,6.23913368 18.1401715,6.77623475 L18.1401715,3.28096376 L19.28667,3.28096376 L19.28667,12.7999996 L18.2331308,12.7999996 L18.1773552,12.0811141 C17.7187536,12.6430045 17.0804392,12.9239454 16.2623929,12.9239454 C15.4856622,12.9239454 14.8525121,12.6058211 14.3629239,11.9695629 C13.8733356,11.3333047 13.6285451,10.5028763 13.6285451,9.47825274 L13.6285451,9.3914907 Z M14.7750436,9.52163377 C14.7750436,10.2818383 14.93204,10.8767721 15.2460375,11.306453 C15.5600351,11.7361338 15.993841,11.950971 16.5474682,11.950971 C17.2746204,11.950971 17.8055162,11.6245838 18.1401715,10.9717994 L18.1401715,7.89174676 C17.7972531,7.25962013 17.2704888,6.94356155 16.5598628,6.94356155 C15.9979725,6.94356155 15.5600351,7.16046449 15.2460375,7.59427689 C14.93204,8.02808929 14.7750436,8.67053516 14.7750436,9.52163377 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+                <g id="pattern_sdk" transform="translate(190.256401, 25.900000) rotate(-360.000000) translate(-190.256401, -25.900000) translate(176.256401, 10.400000)">
+                    <g id="Group" transform="translate(0.000000, 0.000000)">
+                        <use id="Rectangle-3" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-14)" stroke-width="4" transform="translate(14.210764, 14.210764) rotate(-315.000000) translate(-14.210764, -14.210764) " xlink:href="#path-13"></use>
+                        <path d="M24.760325,17.4107643 L27.7872142,19.0107642 L14.2107644,26.1872142 L0.634314557,19.0107642 L3.66120377,17.4107643 L14.2107644,22.9872143 L24.760325,17.4107643 Z" id="Combined-Shape" fill-opacity="0.15" fill="#000000"></path>
+                        <path d="M24.760325,22.2107641 L27.7872142,23.8107641 L14.2107644,30.9872141 L0.634314557,23.8107641 L3.66120377,22.2107641 L14.2107644,27.7872142 L24.760325,22.2107641 Z" id="Combined-Shape" fill-opacity="0.15" fill="#000000"></path>
+                    </g>
+                </g>
+                <g id="pattern_sdk-copy" transform="translate(37.999999, 177.899995) rotate(-360.000000) translate(-37.999999, -177.899995) translate(23.999999, 162.399995)">
+                    <g id="Group" transform="translate(-0.000000, 0.000000)">
+                        <use id="Rectangle-3" stroke-opacity="0.15" stroke="#000000" mask="url(#mask-16)" stroke-width="4" transform="translate(14.210764, 14.210764) rotate(-315.000000) translate(-14.210764, -14.210764) " xlink:href="#path-15"></use>
+                        <path d="M24.760325,17.4107643 L27.7872142,19.0107642 L14.2107644,26.1872142 L0.634314557,19.0107642 L3.66120377,17.4107643 L14.2107644,22.9872143 L24.760325,17.4107643 Z" id="Combined-Shape" fill-opacity="0.15" fill="#000000"></path>
+                        <path d="M24.760325,22.2107641 L27.7872142,23.8107641 L14.2107644,30.9872141 L0.634314557,23.8107641 L3.66120377,22.2107641 L14.2107644,27.7872142 L24.760325,22.2107641 Z" id="Combined-Shape" fill-opacity="0.15" fill="#000000"></path>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(159.199995, 88.799997)">
+                    <path d="M19.555555,3.19999991 L5.2444443,3.19999991 C4.11999988,3.19999991 3.19999991,4.11999988 3.19999991,5.2444443 L3.19999991,19.555555 C3.19999991,20.6799994 4.11999988,21.5999994 5.2444443,21.5999994 L19.555555,21.5999994 C20.6799994,21.5999994 21.5999994,20.6799994 21.5999994,19.555555 L21.5999994,5.2444443 C21.5999994,4.11999988 20.6799994,3.19999991 19.555555,3.19999991 L19.555555,3.19999991 Z M9.59999973,17.5999995 L7.1999998,17.5999995 L7.1999998,10.3999997 L9.59999973,10.3999997 L9.59999973,17.5999995 L9.59999973,17.5999995 Z M13.5999996,17.5999995 L11.1999997,17.5999995 L11.1999997,7.1999998 L13.5999996,7.1999998 L13.5999996,17.5999995 L13.5999996,17.5999995 Z M17.5999995,17.5999995 L15.1999996,17.5999995 L15.1999996,13.5999996 L17.5999995,13.5999996 L17.5999995,17.5999995 L17.5999995,17.5999995 Z" id="Shape" fill-opacity="0.15" fill="#000000"></path>
+                    <polygon id="Shape" points="0 0 23.9999993 0 23.9999993 23.9999993 0 23.9999993"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
