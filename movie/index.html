@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/dataTables.bootstrap4.min.css">
+
 	
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+	<script src="https://hls-js.netlify.app/dist/hls.js"></script>
 </head>
 
 <body background="assets/img/backg.svg">
@@ -33,19 +32,26 @@
     <div class="container bg-white border rounded border-white shadow-sm main" >
 	
 	<section class="content" >
-
-<div id="dplayer"></div>
+<video id="video" controls="" autoplay="" class="videoCentered" style="width: 100%;" __idm_id__="502976513" src="https://mhcdn.mhqiyi.com/20210402/gFqF2mUN/index.m3u8"></video>
 
 <script>
-var dp = new DPlayer({
-    container: document.getElementById('dplayer'),
-    video: {
-        url: 'https://mhcdn.mhqiyi.com/20210402/gFqF2mUN/index.m3u8',
-    },
-});
-</script>
-
-
+      var video = document.getElementById('video');
+      if (Hls.isSupported()) {
+        var hls = new Hls({
+          debug: true,
+        });
+        hls.loadSource('https://mhcdn.mhqiyi.com/20210402/gFqF2mUN/index.m3u8');
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+          video.muted = true;
+          video.play();
+        });
+      }
+      // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+      // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+      // This is using the built-in support of the plain video element, without using hls.js.
+    
+    </script>
 
 	</section>
 	
