@@ -1,31 +1,246 @@
----
-layout: page
-title: 首页
----
-<div class="page page-index">
-  {% for post in site.posts  -%}
-    {%- capture post_year %}{{ post.date | date: "%Y" }}{% endcapture -%}
-    {%- capture post_previous_year %}{{ post.previous.date | date: "%Y" }}{% endcapture -%}
-    {%- capture post_next_year %}{{ post.next.date | date: "%Y" }}{% endcapture -%}
-    {%- if forloop.first or post_next_year != post_year -%}
-    <div class="list-post">
-      <h2 id="{{post_year}}">{{post_year}}</h2>
-      <ul>
-    {%- endif %}
-        <li>
-          <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
-          <div class="title">
-            <a href="{{ site.baseurl | append: post.url }}" class="hover-underline">{{ post.title }}</a>
-          </div>
-          <div class="categories">
-            {% for categorie in post.categories -%}
-            <a href="{{site.baseurl}}/pages/categories.html#{{ categorie }}" class="hover-underline">{{ categorie }}</a>
-            {%- endfor %}
-          </div>
-        </li>
-    {%- if forloop.last or post_previous_year != post_year %}
-      </ul>
-    </div>
-    {%- endif %}
-  {%- endfor %}
-</div>
+
+<!doctype html>
+<html lang="zh-CN" class="respect-color-scheme-preference">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>素质教育的漏网之鱼</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//47.110.234.88' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="素质教育的漏网之鱼 &raquo; Feed" href="http://47.110.234.88/feed/" />
+<link rel="alternate" type="application/rss+xml" title="素质教育的漏网之鱼 &raquo; 评论Feed" href="http://47.110.234.88/comments/feed/" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/47.110.234.88\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://47.110.234.88/wp-includes/css/dist/block-library/style.min.css?ver=5.7' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='http://47.110.234.88/wp-includes/css/dist/block-library/theme.min.css?ver=5.7' media='all' />
+<link rel='stylesheet' id='twenty-twenty-one-style-css'  href='http://47.110.234.88/wp-content/themes/twentytwentyone/style.css?ver=1.2' media='all' />
+<style id='twenty-twenty-one-style-inline-css'>
+body,input,textarea,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,.has-drop-cap:not(:focus)::first-letter,.has-drop-cap:not(:focus)::first-letter,.entry-content .wp-block-archives,.entry-content .wp-block-categories,.entry-content .wp-block-cover-image,.entry-content .wp-block-latest-comments,.entry-content .wp-block-latest-posts,.entry-content .wp-block-pullquote,.entry-content .wp-block-quote.is-large,.entry-content .wp-block-quote.is-style-large,.entry-content .wp-block-archives *,.entry-content .wp-block-categories *,.entry-content .wp-block-latest-posts *,.entry-content .wp-block-latest-comments *,.entry-content p,.entry-content ol,.entry-content ul,.entry-content dl,.entry-content dt,.entry-content cite,.entry-content figcaption,.entry-content .wp-caption-text,.comment-content p,.comment-content ol,.comment-content ul,.comment-content dl,.comment-content dt,.comment-content cite,.comment-content figcaption,.comment-content .wp-caption-text,.widget_text p,.widget_text ol,.widget_text ul,.widget_text dl,.widget_text dt,.widget-content .rssSummary,.widget-content cite,.widget-content figcaption,.widget-content .wp-caption-text { font-family: 'PingFang SC','Helvetica Neue','Microsoft YaHei New','STHeiti Light',sans-serif; }
+:root{--global--color-background: #ffffff;--global--color-primary: #000;--global--color-secondary: #000;--button--color-background: #000;--button--color-text-hover: #000;}
+</style>
+<link rel='stylesheet' id='twenty-twenty-one-print-style-css'  href='http://47.110.234.88/wp-content/themes/twentytwentyone/assets/css/print.css?ver=1.2' media='print' />
+<link rel='stylesheet' id='tt1-dark-mode-css'  href='http://47.110.234.88/wp-content/themes/twentytwentyone/assets/css/style-dark-mode.css?ver=1.2' media='all' />
+<link rel="https://api.w.org/" href="http://47.110.234.88/wp-json/" /><link rel="alternate" type="application/json" href="http://47.110.234.88/wp-json/wp/v2/pages/88" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://47.110.234.88/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://47.110.234.88/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7" />
+<link rel="canonical" href="http://47.110.234.88/" />
+<link rel='shortlink' href='http://47.110.234.88/' />
+<link rel="alternate" type="application/json+oembed" href="http://47.110.234.88/wp-json/oembed/1.0/embed?url=http%3A%2F%2F47.110.234.88%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://47.110.234.88/wp-json/oembed/1.0/embed?url=http%3A%2F%2F47.110.234.88%2F&#038;format=xml" />
+<style id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	</head>
+
+<body class="home page-template-default page page-id-88 custom-background wp-embed-responsive is-light-theme has-background-white no-js singular has-main-navigation">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">跳至内容</a>
+
+	
+<header id="masthead" class="site-header has-menu" role="banner">
+
+	
+
+<div class="site-branding">
+
+	
+						<h1 class="screen-reader-text">素质教育的漏网之鱼</h1>
+			
+	</div><!-- .site-branding -->
+	
+	<nav id="site-navigation" class="primary-navigation" role="navigation" aria-label="主菜单">
+		<div class="menu-button-container">
+			<button id="primary-mobile-menu" class="button" aria-controls="primary-menu-list" aria-expanded="false">
+				<span class="dropdown-icon open">菜单					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 6H19.5V7.5H4.5V6ZM4.5 12H19.5V13.5H4.5V12ZM19.5 18H4.5V19.5H19.5V18Z" fill="currentColor"/></svg>				</span>
+				<span class="dropdown-icon close">关闭					<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 10.9394L5.53033 4.46973L4.46967 5.53039L10.9393 12.0001L4.46967 18.4697L5.53033 19.5304L12 13.0607L18.4697 19.5304L19.5303 18.4697L13.0607 12.0001L19.5303 5.53039L18.4697 4.46973L12 10.9394Z" fill="currentColor"/></svg>				</span>
+			</button><!-- #primary-mobile-menu -->
+		</div><!-- .menu-button-container -->
+		<div class="primary-menu-container"><ul id="primary-menu-list" class="menu-wrapper"><li id="menu-item-111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-88 current_page_item menu-item-111"></li>
+<li id="menu-item-44" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-44">
+
+</li>
+</ul></div>	</nav><!-- #site-navigation -->
+
+</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+
+<article id="post-88" class="post-88 page type-page status-publish hentry entry">
+
+	
+	<div class="entry-content">
+		
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto_text')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+</script>				<!--一言Javascript + html-->
+
+<p id="hitokoto_text">😀 获取中&#8230;</p1>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	</article><!-- #post-88 -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div><!-- #content -->
+
+	
+	<aside class="widget-area">
+		<section id="media_audio-3" class="widget widget_media_audio"><h2 class="widget-title">Loops!</h2><!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+<audio class="wp-audio-shortcode" id="audio-88-1" preload="none" style="width: 100%;" controls="controls"><source type="audio/mpeg" src="http://47.110.234.88/wp-content/uploads/2021/04/BesnineRaphael-Sulu-Archipelago.mp3?_=1" /><source type="audio/mpeg" src="http://47.110.234.88/wp-content/uploads/2021/04/BesnineRaphael-Sulu-Archipelago.mp3?_=1" /><a href="http://47.110.234.88/wp-content/uploads/2021/04/BesnineRaphael-Sulu-Archipelago.mp3">http://47.110.234.88/wp-content/uploads/2021/04/BesnineRaphael-Sulu-Archipelago.mp3</a></audio></section>	</aside><!-- .widget-area -->
+
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+
+				<div class="site-info">
+			<div class="site-name">
+																</div><!-- .site-name -->
+			<div class="powered-by">
+				 			</div><!-- .powered-by -->
+
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+<script>document.body.classList.remove("no-js");</script><button id="dark-mode-toggler" class="fixed-bottom" aria-pressed="false" onClick="toggleDarkMode()">深色模式：<span aria-hidden="true"></span></button>		<style>
+			#dark-mode-toggler > span {
+				margin-left: 5px;
+			}
+			#dark-mode-toggler > span::before {
+				content: '关闭';
+			}
+			#dark-mode-toggler[aria-pressed="true"] > span::before {
+				content: '开启';
+			}
+					</style>
+
+		<script>function toggleDarkMode() { // jshint ignore:line
+	var toggler = document.getElementById( 'dark-mode-toggler' );
+
+	if ( 'false' === toggler.getAttribute( 'aria-pressed' ) ) {
+		toggler.setAttribute( 'aria-pressed', 'true' );
+		document.documentElement.classList.add( 'is-dark-theme' );
+		document.body.classList.add( 'is-dark-theme' );
+		window.localStorage.setItem( 'twentytwentyoneDarkMode', 'yes' );
+	} else {
+		toggler.setAttribute( 'aria-pressed', 'false' );
+		document.documentElement.classList.remove( 'is-dark-theme' );
+		document.body.classList.remove( 'is-dark-theme' );
+		window.localStorage.setItem( 'twentytwentyoneDarkMode', 'no' );
+	}
+}
+
+function twentytwentyoneIsDarkMode() {
+	var isDarkMode = window.matchMedia( '(prefers-color-scheme: dark)' ).matches;
+
+	if ( 'yes' === window.localStorage.getItem( 'twentytwentyoneDarkMode' ) ) {
+		isDarkMode = true;
+	} else if ( 'no' === window.localStorage.getItem( 'twentytwentyoneDarkMode' ) ) {
+		isDarkMode = false;
+	}
+
+	return isDarkMode;
+}
+
+function darkModeInitialLoad() {
+	var toggler = document.getElementById( 'dark-mode-toggler' ),
+		isDarkMode = twentytwentyoneIsDarkMode();
+
+	if ( isDarkMode ) {
+		document.documentElement.classList.add( 'is-dark-theme' );
+		document.body.classList.add( 'is-dark-theme' );
+	} else {
+		document.documentElement.classList.remove( 'is-dark-theme' );
+		document.body.classList.remove( 'is-dark-theme' );
+	}
+
+	if ( toggler && isDarkMode ) {
+		toggler.setAttribute( 'aria-pressed', 'true' );
+	}
+}
+
+function darkModeRepositionTogglerOnScroll() {
+
+	var toggler = document.getElementById( 'dark-mode-toggler' ),
+		prevScroll = window.scrollY || document.documentElement.scrollTop,
+		currentScroll,
+
+		checkScroll = function() {
+			currentScroll = window.scrollY || document.documentElement.scrollTop;
+			if (
+				currentScroll + ( window.innerHeight * 1.5 ) > document.body.clientHeight ||
+				currentScroll < prevScroll
+			) {
+				toggler.classList.remove( 'hide' );
+			} else if ( currentScroll > prevScroll && 250 < currentScroll ) {
+				toggler.classList.add( 'hide' );
+			}
+			prevScroll = currentScroll;
+		};
+
+	if ( toggler ) {
+		window.addEventListener( 'scroll', checkScroll );
+	}
+}
+
+darkModeInitialLoad();
+darkModeRepositionTogglerOnScroll();
+</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}
+	</script>
+	<link rel='stylesheet' id='mediaelement-css'  href='http://47.110.234.88/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://47.110.234.88/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.7' media='all' />
+<script id='twenty-twenty-one-ie11-polyfills-js-after'>
+( Element.prototype.matches && Element.prototype.closest && window.NodeList && NodeList.prototype.forEach ) || document.write( '<script src="http://47.110.234.88/wp-content/themes/twentytwentyone/assets/js/polyfills.js?ver=1.2"></scr' + 'ipt>' );
+</script>
+<script src='http://47.110.234.88/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js?ver=1.2' id='twenty-twenty-one-primary-navigation-script-js'></script>
+<script src='http://47.110.234.88/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js?ver=1.2' id='twenty-twenty-one-responsive-embeds-script-js'></script>
+<script src='http://47.110.234.88/wp-includes/js/wp-embed.min.js?ver=5.7' id='wp-embed-js'></script>
+<script src='http://47.110.234.88/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script src='http://47.110.234.88/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"zh","strings":{"mejs.download-file":"\u4e0b\u8f7d\u6587\u4ef6","mejs.install-flash":"\u60a8\u6b63\u5728\u4f7f\u7528\u7684\u6d4f\u89c8\u5668\u672a\u5b89\u88c5\u6216\u542f\u7528Flash\u64ad\u653e\u5668\uff0c\u8bf7\u542f\u7528\u60a8\u7684Flash\u64ad\u653e\u5668\u63d2\u4ef6\uff0c\u6216\u4ece https:\/\/get.adobe.com\/flashplayer\/ \u4e0b\u8f7d\u6700\u65b0\u7248\u3002","mejs.fullscreen":"\u5168\u5c4f","mejs.play":"\u64ad\u653e","mejs.pause":"\u6682\u505c","mejs.time-slider":"\u65f6\u95f4\u8f74","mejs.time-help-text":"\u4f7f\u7528\u5de6\/\u53f3\u7bad\u5934\u952e\u6765\u524d\u8fdb\u4e00\u79d2\uff0c\u4e0a\/\u4e0b\u7bad\u5934\u952e\u6765\u524d\u8fdb\u5341\u79d2\u3002","mejs.live-broadcast":"\u73b0\u573a\u76f4\u64ad","mejs.volume-help-text":"\u4f7f\u7528\u4e0a\/\u4e0b\u7bad\u5934\u952e\u6765\u589e\u9ad8\u6216\u964d\u4f4e\u97f3\u91cf\u3002","mejs.unmute":"\u53d6\u6d88\u9759\u97f3","mejs.mute":"\u9759\u97f3","mejs.volume-slider":"\u97f3\u91cf","mejs.video-player":"\u89c6\u9891\u64ad\u653e\u5668","mejs.audio-player":"\u97f3\u9891\u64ad\u653e\u5668","mejs.captions-subtitles":"\u8bf4\u660e\u6587\u5b57\u6216\u5b57\u5e55","mejs.captions-chapters":"\u7ae0\u8282","mejs.none":"\u65e0","mejs.afrikaans":"\u5357\u975e\u8377\u5170\u8bed","mejs.albanian":"\u963f\u5c14\u5df4\u5c3c\u4e9a\u8bed","mejs.arabic":"\u963f\u62c9\u4f2f\u8bed","mejs.belarusian":"\u767d\u4fc4\u7f57\u65af\u8bed","mejs.bulgarian":"\u4fdd\u52a0\u5229\u4e9a\u8bed","mejs.catalan":"\u52a0\u6cf0\u7f57\u5c3c\u4e9a\u8bed","mejs.chinese":"\u4e2d\u6587","mejs.chinese-simplified":"\u7b80\u4f53\u4e2d\u6587","mejs.chinese-traditional":"\u7e41\u4f53\u4e2d\u6587","mejs.croatian":"\u514b\u7f57\u5730\u4e9a\u8bed","mejs.czech":"\u6377\u514b\u8bed","mejs.danish":"\u4e39\u9ea6\u8bed","mejs.dutch":"\u8377\u5170\u8bed","mejs.english":"\u82f1\u8bed","mejs.estonian":"\u7231\u6c99\u5c3c\u4e9a\u8bed","mejs.filipino":"\u83f2\u5f8b\u5bbe\u8bed","mejs.finnish":"\u82ac\u5170\u8bed","mejs.french":"\u6cd5\u8bed","mejs.galician":"\u52a0\u5229\u897f\u4e9a\u8bed","mejs.german":"\u5fb7\u8bed","mejs.greek":"\u5e0c\u814a\u8bed","mejs.haitian-creole":"\u6d77\u5730\u514b\u91cc\u5965\u5c14\u8bed","mejs.hebrew":"\u5e0c\u4f2f\u6765\u8bed","mejs.hindi":"\u5370\u5730\u8bed","mejs.hungarian":"\u5308\u7259\u5229\u8bed","mejs.icelandic":"\u51b0\u5c9b\u8bed","mejs.indonesian":"\u5370\u5ea6\u5c3c\u897f\u4e9a\u8bed","mejs.irish":"\u7231\u5c14\u5170\u8bed","mejs.italian":"\u610f\u5927\u5229\u8bed","mejs.japanese":"\u65e5\u8bed","mejs.korean":"\u97e9\u8bed","mejs.latvian":"\u62c9\u8131\u7ef4\u4e9a\u8bed","mejs.lithuanian":"\u7acb\u9676\u5b9b\u8bed","mejs.macedonian":"\u9a6c\u5176\u987f\u8bed","mejs.malay":"\u9a6c\u6765\u8bed","mejs.maltese":"\u9a6c\u8033\u4ed6\u8bed","mejs.norwegian":"\u632a\u5a01\u8bed","mejs.persian":"\u6ce2\u65af\u8bed","mejs.polish":"\u6ce2\u5170\u8bed","mejs.portuguese":"\u8461\u8404\u7259\u8bed","mejs.romanian":"\u7f57\u9a6c\u5c3c\u4e9a\u8bed","mejs.russian":"\u4fc4\u8bed","mejs.serbian":"\u585e\u5c14\u7ef4\u4e9a\u8bed","mejs.slovak":"\u65af\u6d1b\u4f10\u514b\u8bed","mejs.slovenian":"\u65af\u6d1b\u6587\u5c3c\u4e9a\u8bed","mejs.spanish":"\u897f\u73ed\u7259\u8bed","mejs.swahili":"\u65af\u74e6\u5e0c\u91cc\u8bed","mejs.swedish":"\u745e\u5178\u8bed","mejs.tagalog":"\u4ed6\u52a0\u7984\u8bed","mejs.thai":"\u6cf0\u8bed","mejs.turkish":"\u571f\u8033\u5176\u8bed","mejs.ukrainian":"\u4e4c\u514b\u5170\u8bed","mejs.vietnamese":"\u8d8a\u5357\u8bed","mejs.welsh":"\u5a01\u5c14\u58eb\u8bed","mejs.yiddish":"\u610f\u7b2c\u7eea\u8bed"}};
+</script>
+<script src='http://47.110.234.88/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.16' id='mediaelement-core-js'></script>
+<script src='http://47.110.234.88/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.7' id='mediaelement-migrate-js'></script>
+<script id='mediaelement-js-extra'>
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+</script>
+<script src='http://47.110.234.88/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=5.7' id='wp-mediaelement-js'></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
+	</script>
+	
+</body>
+</html>
