@@ -26,8 +26,6 @@ tucaoUrl: https://support.qq.com/products/297659
 menu:
   - title: 首页
     url: /
-  - title: WORD导航栏
-    url: /study/wordpressHTML/
 #  - title: 归类
 #   url: /pages/categories.html
   - title: 搜索
