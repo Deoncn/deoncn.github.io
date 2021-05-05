@@ -1,0 +1,12 @@
+@charset "utf-8";
+div {
+	max-width: 1066.670px;
+	font-family: 微软雅黑;
+	font-style: normal;
+	letter-spacing: normal;
+	font-size: x-large;
+}
+body {
+	display: flex;			/* 项目居中 */
+	justify-content: center;
+}

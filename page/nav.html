@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dd</title>
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto_text')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+</script> <!--一言Javascript + html-->
+</head>
+
+<body>
+<div>  <a href="../index.html">主页</a>
+ <a href="./nav.html">学习导航</a>
+	<a href="./friend.html">友链</a>
+	<a href="./contact.html">联系</a>
+  <h1>学业</h1>
+  <p><a href="https://onlineh5.zhihuishu.com/onlineWeb.html#/studentIndex" target="_blank">智慧树</a><br />
+    <a href="http://i.chaoxing.com/base?t=1616781552987" target="_blank">学习通</a><br />
+    <a href="https://www.yuketang.cn/web" target="_blank">雨课堂</a><br />
+    <a href="http://jwglnew.xawl.edu.cn/" target="_blank">西安文理学院教务管理系统</a><br />
+	  </p>
+  <p><a href="http://www.neea.edu.cn/" target="_blank" rel="noreferrer noopener">考试教育网</a> <a href="https://yz.chsi.com.cn/" target="_blank" rel="noreferrer noopener">招研网</a></p>
+  
+  <h1>Javadopsway</h1>
+  <p><a href="https://www.w3school.com.cn/h.asp" target="_blank">V3School - HTML 系列教程</a><br />
+    <a href="https://www.51zxw.net" target="_blank">我要自学网</a><br />
+    <a href="https://v3.bootcss.com/css/#tables-hover-rows" target="_blank">Bootstrap v3 中文文档</a><br />
+    <a href="https://www.runoob.com" target="_blank">菜鸟教程 - 学的不仅是技术，更是梦想！</a><br />
+    <a href="https://education.github.com/pack/offers?sort=popularity&amp;tag=Learn" target="_blank">GitHub Student Developer Pack</a><br />
+    <a href="https://github.com/deoncn" target="_blank">我的Github</a><br />
+  </p>
+  <h1>Brand Trojan</h1>
+  <p><a href="https://brand.dynv6.net/config/" target="_blank">Brand Trojan Panel</a><br />
+    <a href="https://console.dogecloud.com/" target="_blank">DogeCloud 云加速及视频</a><br />
+    <a href="https://dynv6.com/" target="_blank">dynv6.net Free域名</a><br />
+    <a href="https://cvm.dogyun.com/server/list" target="_blank">狗云</a><br />
+  </p>
+  <p id="hitokoto_text">:D 获取中...</p>
+</div>
+</body>
+</html>
