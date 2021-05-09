@@ -6,7 +6,7 @@ div {
 	letter-spacing: normal;
 	font-size: x-large;
 	min-width: 812px;
-	border: thick solid #F57CCB;
+	border: thick solid #30363D;
 }
 body {
 	display: flex;			/* 项目居中 */
