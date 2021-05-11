@@ -12,3 +12,13 @@ body {
 	display: flex;			/* 项目居中 */
 	justify-content: center;
 }
+header {
+	text-align: center;
+}
+#headerimage {
+	width: 20%;
+	height: 20%;
+}
+#headertext {
+	text-align: center;
+}
