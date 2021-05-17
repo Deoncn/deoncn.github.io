@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <title>屁大点事分享者</title>
 <link href="css/css.css" rel="stylesheet" type="text/css">
-<script>
+<script src="https://hls-js.netlify.app/dist/hls.js"></script> 
+<script><!--百度统计-->
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -12,14 +13,27 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
-</script> 
-<!--百度统计-->
-
+</script>
 </head>
 <body>
 <div>
   <div> <!--Header-->
-    <video width="100%" poster="" autoplay="1" src="https://s-sh-2339-deondisk1.oss.dogecdn.com/Le%20Miroir.mp4"></video>
+    <video width="100%" poster="" controls src="https://s-sh-2339-deondisk1.oss.dogecdn.com/Le%20Miroir.mp4"></video>
+    <video id="video" width="100%" poster="" controls src=""></video>
+    <script><!--串流m3u8用--> 
+      var video = document.getElementById('video');
+      if (Hls.isSupported()) {
+        var hls = new Hls({
+          debug: false,
+        });
+        hls.loadSource('https://vod.bunediy.com/20210515/61ijeEbK/index.m3u8');
+        hls.attachMedia(video);
+        hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+          video.muted = false;
+          video.play(0);
+        });
+      }
+</script> 
   </div>
   <div> <!--body-->
     <pre>
@@ -27,10 +41,10 @@ var _hmt = _hmt || [];
 <a href="https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_11.0.0.33826.exe">向日葵.exe</a>
 <a href="https://deoncn.gitbook.io/windows-10/" target="_blank">Windows10 重装</a>
 </pre>
-    <!-- #BeginDate format:fcCh2m -->2021年5月17日 星期一  22:22<!-- #EndDate --> 
+    <!-- #BeginDate format:fcCh2m -->2021年5月17日 星期一  22:40<!-- #EndDate --> 
   </div>
   <div>
-    <h1 >学习</h1>
+    <header><h1 >学习</h1></header>
     <figure > <img width="1568" height="882" src="https://z3.ax1x.com/2021/05/13/gDXd1g.jpg" alt="" sizes="(max-width: 1568px) 100vw, 1568px" style="width:100%;height:56.25%;max-width:1920px;" /> </figure>
     <!-- .post-thumbnail --> 
     
@@ -49,7 +63,50 @@ var _hmt = _hmt || [];
     <p><a href="http://www.prometric.com.cn/" target="_blank" rel="noreferrer noopener">计考考试中心</a></p>
   </div>
   <!-- .entry-content --> 
+  <div>
+  <header><h1 >友链</h1></header>
+  <div>
+    <p>欢迎各位朋友与我建立友链，如需友链请到 2210633536@qq.com 留言，我看到留言后会添加上的，本站的友链信息如下</p>
+    <pre ><code>名称：Deon's blog
+描述：博客
+地址：http://456d.top
+头像：https://avatars.githubusercontent.com/u/51418619?v=4
+</code></pre>
+    <ul>
+      <li><a rel="noreferrer noopener" href="https://rain.moimo.me/" target="_blank">M E S</a></li>
+      <li><a rel="noreferrer noopener" href="https://achuan.io/" target="_blank">阿川的个人博客</a></li>
+      <li><a rel="noreferrer noopener" href="https://wakzz.cn/" target="_blank">祈雨的博客</a></li>
+      <li><a rel="noreferrer noopener" href="https://hongcyu.cn/" target="_blank">hongCYu’s Blog</a></li>
+      <li><a rel="noreferrer noopener" href="https://yoyling.com/" target="_blank">简单的人生笔记</a></li>
+      <li><a rel="noreferrer noopener" href="https://lzhbhlrpython.github.io/" target="_blank">Py的Blogggg</a></li>
+      <li><a rel="noreferrer noopener" href="https://www.itrhx.com/" target="_blank">TRHX‘BLOG</a></li>
+      <li><a rel="noreferrer noopener" href="https://aawsl.com/links/" target="_blank">saber的自留地</a></li>
+      <li><a rel="noreferrer noopener" href="https://www.adaxh.site/home" target="_blank">卑微小前端</a></li>
+      <li><a rel="noreferrer noopener" href="https://5nav.ml/" target="_blank">谢週五の导航站</a></li>
+      <li><a rel="noreferrer noopener" href="https://blog.literalkernel.work" target="_blank">莉特雅的机房</a> </li>
+      <li><a rel="noreferrer noopener" href="https://blog.codingnow.com/" target="_blank">云风blog</a></li>
+      <li><a href="https://www.tometu.com/" target="_blank">不完全甜</a></li>
+    </ul>
+  </div>
+	 <div>
+  <header>
+    <h1 >联系</h1>
+  </header>
+  <!-- .entry-header -->
   
+  <div>
+    <h2>联系我</h2>
+    <ul>
+      <li>QQ : 2210633536</li>
+      <li>Email :&nbsp;<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=l_Tj_Pny8-j45dfx_O-69v77ufT4_g">stonedoor@foxmail.com</a></li>
+      <li>GitHub:&nbsp;<a href="https://github.com/Deoncn">https://github.com/Deoncn</a></li>
+    </ul>
+    <p>注：这个页面包含了一些基本的联系资料，像是地址和联系电话。您也可以尝试使用插件增加联系表单。</p>
+  </div>
+  <!-- .entry-content --> 
+  
+</div>
+</div>
 </div>
 </body>
 </html>
