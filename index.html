@@ -14,10 +14,23 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+<script><!--一言-->
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto_text')
+      hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+      hitokoto.innerText = data.hitokoto
+    })
+    .catch(console.error)
+	</script>
 </head>
 <body>
 <div>
   <div> <!--Header-->
+	 <figure > <img width="1568" height="882" src="https://z3.ax1x.com/2021/05/24/gxAldg.jpg" alt="" sizes="(max-width: 1568px) 100vw, 1568px" style="width:100%;height:56.25%;max-width:1920px;" /> 
+	  <p id="hitokoto_text">:D 获取中...</p> </figure>
+	随机电影或小视频更新区，有需要看什么电影的朋友可以随时联系我更换(联系方式在下面联系区域)。
     <video width="100%" poster="" controls src="https://s-sh-2339-deondisk1.oss.dogecdn.com/Le%20Miroir.mp4"></video>
     <video id="video" width="100%" poster="" controls src=""></video>
     <script><!--串流m3u8用--> 
@@ -42,7 +55,7 @@ var _hmt = _hmt || [];
 <a href="https://dl-cdn.oray.com/sunlogin/windows/SunloginClient_11.0.0.33826.exe">向日葵.exe</a>
 <a href="https://deoncn.gitbook.io/windows-10/" target="_blank">Windows10 重装</a>
 </pre>
-    <!-- #BeginDate format:fcCh2m -->2021年5月19日 星期三  1:00<!-- #EndDate --> 
+    <!-- #BeginDate format:fcCh2m -->2021年5月24日 星期一  20:13<!-- #EndDate --> 
   </div>
   <div>
     <header>
@@ -123,7 +136,7 @@ var _hmt = _hmt || [];
       <a rel="noreferrer noopener" href="https://console.dogecloud.com/" target="_blank">DogeCloud 云加速及视频</a><br>
       <a rel="noreferrer noopener" href="https://dynv6.com/" target="_blank">dynv6.net Free域名</a><br>
       <a rel="noreferrer noopener" href="https://cvm.dogyun.com/server/list" target="_blank">狗云</a></p>
-    <pre ><code>&lt;script>
+    <pre ><code> &lt; script>
   fetch('https://v1.hitokoto.cn')
     .then(response => response.json())
     .then(data => {
