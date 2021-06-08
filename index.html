@@ -28,19 +28,19 @@ var _hmt = _hmt || [];
 <body>
 <div>
   <div> <!--Header--> 
-    <!-- #BeginDate format:fcCh2m -->2021年6月6日 星期日  11:46<!-- #EndDate --> <a href="Sponsorships/">👉捐赠</a>
+    <!-- #BeginDate format:fcCh2m -->2021年6月7日 星期一  18:32<!-- #EndDate --> <a href="Sponsorships/">👉捐赠</a>
 	  <a href="download/">下载页</a> <a href="https://github.com/deoncn" target="_blank" rel="noreferrer noopener">Github</a>
     <header> <a href="https://deoncn.gitbook.io/windows-10/" target="_blank">Windows10 重装</a>
       <p id="hitokoto_text">:D 获取中...</p>
     </header>
-    <video width="100%" id="video1" poster="" autoplay=""  src="https://s-cd-2339-brand.oss.dogecdn.com/Farewell%20My%20Concubine%20lit.mp4"></video>
+    <video width="100%" id="video" poster="" autoplay="" controls="" src="https://api.dogecloud.com/player/get.m3u8?vcode=b27c6d09bd192335&userId=2339&flsign=cf2141a255564b73983fe89b982802cc&ext=.m3u8"></video>
     <script><!--串流m3u8用--> 
       var video = document.getElementById('video');
       if (Hls.isSupported()) {
         var hls = new Hls({
           debug: false,
         });
-        hls.loadSource('https://s-cd-2339-brand.oss.dogecdn.com/Farewell%20My%20Concubine%20lit.mp4');
+        hls.loadSource('https://api.dogecloud.com/player/get.m3u8?vcode=b27c6d09bd192335&userId=2339&flsign=cf2141a255564b73983fe89b982802cc&ext=.m3u8');
         hls.attachMedia(video);
         hls.on(Hls.Events.MEDIA_ATTACHED, function () {
           video.muted = false;
