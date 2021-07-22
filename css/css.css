@@ -25,3 +25,7 @@ header {
 footer {
 	text-align: center;
 }
+man1 {
+	display: flex;			/* 项目居中 */
+	justify-content: center;
+}
