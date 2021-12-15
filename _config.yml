@@ -27,9 +27,9 @@ tucaoUrl: https://support.qq.com/products/297659
 # 菜单
 menu:
   - title: 主页
-    url: /pages/mainindex.html
-  - title: 日志
     url: /
+  - title: 日志
+    url: /pages/2.html
   - title: 归类
     url: /pages/categories.html
   - title: 搜索
