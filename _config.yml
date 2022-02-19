@@ -1,11 +1,11 @@
 encoding: utf-8
 
 # SEO相关信息
-title: Takeshi's Blog
-description: Takeshi的个人博客
-keywords: Takeshi,Blog,Java,Html,JavaScript
-author: Takeshi
-footerText: 'Copyright © 2021 皖ICP备1809389号'
+title: 海绵宝宝
+description: 海绵宝宝的博客
+keywords: Blog,Java,Html,JavaScript
+author: 海绵宝宝
+footerText: '2021 - 2022'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -20,24 +20,22 @@ exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.
 domainUrl: 'https://deoncn.github.io'
 baseurl: ''
 
+
+
+#个人信息配置
+#头像
+headerimg: https://thirdqq.qlogo.cn/g?b=oidb&k=7JfQDPgsztTjt8KBlzV6Aw&s=100&t=1605528403
+#github主页地质
+githubmainpage: https://github.com/deoncn
 # 吐个槽地址，会在chat页面中重定向到该地址
 tucaoUrl: https://support.qq.com/products/297659
 
-
 # 菜单
 menu:
-  - title: 主页
+  - title: 博客
     url: /
-  - title: 日志
-    url: /pages/2.html
-  - title: 归类
-    url: /pages/categories.html
   - title: 搜索
     url: /pages/search.html
-  - title: 友链
-    url: /pages/links.html
-  - title: 留言板
-    url: /pages/chat.html
   - title: 关于
     url: /pages/about.html
 

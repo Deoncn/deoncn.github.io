@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 首页
+title: 博客
 ---
 <div class="page page-index">
   {% for post in site.posts  -%}

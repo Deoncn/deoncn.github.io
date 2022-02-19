@@ -1,7 +1,21 @@
 html.dark {
   color: #c9d1d9;
-  background: #0d1117;
+  background: #28303D;
 }
+html.dark body {
+	border: medium solid #ffffff;
+}
+html.dark header .logo {
+	border: thick solid #ffffff;
+}
+html.dark header{
+	border: medium solid #ffffff;
+}
+html.dark footer {
+  border: medium solid #ffffff;
+}
+
+
 html.dark ::selection {
   background-color: #327bd4;
   color: #ffffff;
