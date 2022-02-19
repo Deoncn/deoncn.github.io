@@ -1,11 +1,11 @@
 encoding: utf-8
 
 # SEO相关信息
-title: 🍆在下茄酱，有何贵干
-description: 🍆在下茄酱，有何贵干
-keywords: 川川,Deoncn,Blog,Java,Deon,Html,JavaScript,
-author: 川
-footerText: 'Copyright 2021 - 2022 Deoncn. All Rights Reserved'
+title: Takeshi's Blog
+description: Takeshi的个人博客
+keywords: Takeshi,Blog,Java,Html,JavaScript
+author: Takeshi
+footerText: 'Copyright © 2021 皖ICP备1809389号'
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -26,11 +26,10 @@ tucaoUrl: https://support.qq.com/products/297659
 
 # 菜单
 menu:
-
   - title: 主页
     url: /
   - title: 日志
-    url: /pages/blog.html
+    url: /pages/2.html
   - title: 归类
     url: /pages/categories.html
   - title: 搜索
@@ -41,13 +40,6 @@ menu:
     url: /pages/chat.html
   - title: 关于
     url: /pages/about.html
-  - title: 导航
-    url: /pages/deonpageindex.html
-  - title: 下载页
-    url: /pages/downloadpage.html
-  - title: 礼物
-    url: /pages/gift/index.html
-    
 
 # 点击页面文字冒出特效,不需要请设置为false
 extClickEffect: false
