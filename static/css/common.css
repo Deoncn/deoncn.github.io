@@ -22,19 +22,12 @@ html {
 }
 
 body {
-  /* Eavn You */
-  font-size: calc(10px + 0.33vw);
-  padding: 5vh 10vw;
-  /* Eavn YOu end */
-  
   max-width: 680px;
-  /* padding: 0 14px; */
+  padding: 0 14px;
   margin: 0 auto;
   border: medium solid #000000;
 }
-.content {
-  border: medium solid #000000;
-}
+
 
 * {
   -webkit-tap-highlight-color: transparent; 
@@ -43,14 +36,14 @@ body {
 ol, ul {
   list-style: none;
 }
-p, h1, h2, h3, h4, h5, ul, ol, li, blockquote {
+h2, h3, h4, h5, ul, ol, li, blockquote {
   padding: 0;
   margin: 0;
 }
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 input, select, textarea {
   font-family: inherit;
   outline: 0;
@@ -87,15 +80,14 @@ input:-webkit-autofill {
 }
 .hover-underline {
   position: relative;
+
 }
 .hover-underline:after {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;
-  bottom: -2px;
-  left: 0;
-  background-color: #333333;
+  height: 100%;
+  background-color: rgb(124, 235, 138);
   visibility: hidden;
   transform: scaleX(0);
   transition: transform 200ms ease-in-out;
@@ -110,18 +102,18 @@ input:-webkit-autofill {
   flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: medium solid #000000;
+	/* border: medium solid #000000; */
 }
 .header .logo {
-  width: 160px;
-  height: 160px;
+  width: 128px;
+  height: 128px;
   cursor: pointer;
   border-radius: 5%;
   flex-shrink: 0;
   margin-right: 10px;
   user-select: none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  border: thick solid #000000;
+  border: thin solid #000000;
 }
 .header .menu {
   margin-right: -9px;
@@ -130,15 +122,15 @@ input:-webkit-autofill {
 }
 .header .menu a {
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 9px;
+  font-size: 25px;
+  padding: 5px;
   white-space: nowrap;
   user-select: auto;
 }
 .footer {
   padding: 15px 0;
   font-size: 14px;
-  border: medium solid #000000;
+  /* border: medium solid #000000; */
 }
 .footer a {
   text-decoration: underline;
@@ -226,7 +218,7 @@ input:-webkit-autofill {
   }
   .header .menu {
     margin-right: -2px;
-    text-align: left;
+    text-align: center;
   }
   .header .menu a {
     margin: 2px 5px;
