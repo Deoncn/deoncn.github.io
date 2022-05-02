@@ -1,12 +1,14 @@
 @charset "utf-8";
+
 /* CSS Document */
 @font-face {
   font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-  sans-serif;
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
   font-display: fallback;
   src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;700&family=Oswald:wght@300;500;700&display=swap');
 }
+
 html {
   color: #3f3f3f;
   background: #B7BCBC;
@@ -24,27 +26,42 @@ html {
 body {
   max-width: 680px;
   padding: 0 14px;
-  margin: 0 auto;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
   border: medium solid #000000;
 }
 
-
 * {
-  -webkit-tap-highlight-color: transparent; 
+  -webkit-tap-highlight-color: transparent;
   /* -webkit-tap-highlight-color 是一个没有标准化的属性，能够设置点击链接的时候出现的高亮颜色。显示给用户的高光是他们成功点击的标识，以及暗示了他们点击的元素。 */
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-h2, h3, h4, h5, ul, ol, li, blockquote {
+
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+blockquote {
   padding: 0;
   margin: 0;
 }
+
 /* a {
   color: inherit;
   text-decoration: none;
 } */
-input, select, textarea {
+input,
+select,
+textarea {
   font-family: inherit;
   outline: 0;
   -webkit-appearance: none;
@@ -52,9 +69,12 @@ input, select, textarea {
   appearance: none;
   border: none;
 }
-pre, code {
+
+pre,
+code {
   font-family: inherit;
 }
+
 input:-webkit-autofill {
   /* 自动填充的文本颜色 */
   -webkit-text-fill-color: #333333 !important;
@@ -65,24 +85,27 @@ input:-webkit-autofill {
   -webkit-transition: background-color 2592000s ease-in-out 0s;
   transition: background-color 2592000s ease-in-out 0s;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
   background-color: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: #999999;
 }
+
 ::selection {
   background-color: #4a4a4a;
   color: #f9f9f9;
 }
-.hover-underline {
-  position: relative;
 
-}
-.hover-underline:after {
+/* .hover-underline {
+  position: relative;
+} */
+/* .hover-underline:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -95,31 +118,57 @@ input:-webkit-autofill {
 .hover-underline:hover:after {
   visibility: visible;
   transform: scaleX(1);
+} */
+
+
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
+
+a:hover {
+  position: sticky;
+  border-bottom: 2px dotted;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 页头 */
 .header {
-	padding: 3px 0;
-	display: flex;
+  padding: 3px 0;
+  display: flex;
   flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	/* border: medium solid #000000; */
+  align-items: center;
+  justify-content: center;
+  /* border: medium solid #000000; */
 }
+
 .header .logo {
-  width: 128px;
-  height: 128px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
   border-radius: 5%;
   flex-shrink: 0;
   margin-right: 10px;
   user-select: none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  border: thin solid #000000;
 }
+
 .header .menu {
   margin-right: -9px;
   text-align: right;
   user-select: none;
 }
+
 .header .menu a {
   display: inline-block;
   font-size: 25px;
@@ -127,11 +176,20 @@ input:-webkit-autofill {
   white-space: nowrap;
   user-select: auto;
 }
+
+
+
+
+
+
+/* 页脚 */
+
 .footer {
   padding: 15px 0;
   font-size: 14px;
   /* border: medium solid #000000; */
 }
+
 .footer a {
   text-decoration: underline;
   color: #000000;
@@ -139,44 +197,15 @@ input:-webkit-autofill {
   white-space: nowrap;
 }
 
-/* Evan You Start */
 
-        h1 {
-            font-size: 4.5em;
-            font-weight: 500;
-            margin-bottom: 0;
-        }
 
-        p {
-            font-size: 1.6em;
-            font-weight: 300;
-            line-height: 1.4;
-            max-width: 28em;
-        }
 
-        a {
-            text-decoration: none;
-            color: #121314;
-            position: relative;
-        }
 
-        a:after {
-            content: '';
-            position: absolute;
-            z-index: -1;
-            top: 60%;
-            left: -0.1em;
-            right: -0.1em;
-            bottom: 0;
-            transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-            background-color: rgba(79, 192, 141, 0.5);
-        }
 
-        a:hover:after {
-            top: 0%;
-        }
 
-/* Evan You End */
+
+/* 快速返回顶层 */
+
 #to-top {
   position: fixed;
   z-index: 99;
@@ -192,10 +221,12 @@ input:-webkit-autofill {
   transform: translateY(66px);
   transition: transform 200ms ease-in-out;
 }
+
 #to-top.show {
   transform: translateY(0);
 }
-#to-top > span {
+
+#to-top>span {
   display: block;
   width: 50%;
   height: 50%;
@@ -204,22 +235,30 @@ input:-webkit-autofill {
   top: 13px;
   transform: translateX(-50%) rotate(45deg);
 }
-#to-top > span:first-child {
+
+#to-top>span:first-child {
   background-color: #ffffff;
 }
-#to-top > span:last-child {
+
+#to-top>span:last-child {
   background-color: #000000;
   transform: translate(-50%, 16%) rotate(45deg);
 }
+
+
+
+
 @media screen and (max-width: 560px) {
   .header {
     padding: 35px 0 20px 0;
     justify-content: flex-start;
   }
+
   .header .menu {
     margin-right: -2px;
     text-align: center;
   }
+
   .header .menu a {
     margin: 2px 5px;
     font-size: 15px;

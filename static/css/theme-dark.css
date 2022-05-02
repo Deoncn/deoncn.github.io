@@ -5,13 +5,14 @@ html.dark {
 html.dark body {
 	border: medium solid #ffffff;
 }
-html.dark header .logo {
-	border: thin solid #ffffff;
-}
 
-html.dark .header .menu a {
-  color:#12a2e6;
+html.dark a {
+  color: whitesmoke;
 }
+/* 
+html.dark .header .menu a {
+  color:#ffffff;
+} */
 
 html.dark ::selection {
   background-color: #327bd4;
@@ -47,13 +48,13 @@ html.dark .page-post .title {
 }
 
 html.dark .page-post .subtitle {
-  color: #12a2e6;
+  color: #ffffff;
 }
 
 /* 主页文字 */
 html.dark .list-post li .title a {
   font-size: 20px;
-  color:rgb(24, 224, 147);
+  color:rgb(255, 255, 255);
 }
 
 html.dark .page-post img {

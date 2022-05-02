@@ -28,7 +28,7 @@
 }
 .list-post li .title a {
   font-size: 20px;
-  color:rgb(137, 8, 223);
+  color: #333333;
 }
 .list-post li .categories {
   flex-shrink: 0;

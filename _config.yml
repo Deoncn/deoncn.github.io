@@ -1,11 +1,12 @@
 encoding: utf-8
 
 # SEO相关信息
-title: 海绵宝宝
-description: 海绵宝宝的博客
-keywords: Blog,Java,Html,JavaScript
-author: 海绵宝宝
-footerText: '2021 - 2022'
+title: 刘大尉   #标题 ：例如：tile：刘大尉
+description: 刘大尉 #描述
+keywords: Blog,Java,Html,JavaScript #关键词
+author: 刘大尉 #作者
+footerText: '2021 - 2022' #页脚时间
+favcicon: 'https://thirdqq.qlogo.cn/g?b=oidb&k=7JfQDPgsztTjt8KBlzV6Aw&s=100&t=1605528403'  #网站图标
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
