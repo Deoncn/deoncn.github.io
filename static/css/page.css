@@ -1,5 +1,6 @@
 .list-post > h2 {
-  font-size: 15px;
+  color: #0170ee;
+  font-size: 20px;
   font-weight: bold;
   padding: 12px 0;
 }
@@ -13,8 +14,8 @@
   padding: 8px 0;
 }
 .list-post li .date {
-  color: #666666;
-  font-size: 14px;
+  color: #0170ee;
+  font-size: 16px;
   flex-shrink: 0;
   margin-right: 10px;
 }

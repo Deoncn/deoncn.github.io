@@ -10,7 +10,7 @@
 }
 
 html {
-  color: #3f3f3f;
+  color: #000000ab;
   background: #B7BCBC;
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
@@ -30,12 +30,7 @@ body {
   margin-right: auto;
   margin-bottom: 100px;
   margin-left: auto;
-  border: medium solid #000000;
-}
-
-* {
-  -webkit-tap-highlight-color: transparent;
-  /* -webkit-tap-highlight-color 是一个没有标准化的属性，能够设置点击链接的时候出现的高亮颜色。显示给用户的高光是他们成功点击的标识，以及暗示了他们点击的元素。 */
+  border: thin solid #0000006c;
 }
 
 ol,
@@ -55,10 +50,6 @@ blockquote {
   margin: 0;
 }
 
-/* a {
-  color: inherit;
-  text-decoration: none;
-} */
 input,
 select,
 textarea {
@@ -75,17 +66,6 @@ code {
   font-family: inherit;
 }
 
-input:-webkit-autofill {
-  /* 自动填充的文本颜色 */
-  -webkit-text-fill-color: #333333 !important;
-  /* -webkit-text-fill-color: var(--text-color) !important; */
-  /* 方式1：使用内阴影覆盖自动填充的背景色 */
-  /* box-shadow: 0 0 0 1000px #ffffff inset !important; */
-  /* 方式2：通过延迟一个月，取消自动填充的背景色 */
-  -webkit-transition: background-color 2592000s ease-in-out 0s;
-  transition: background-color 2592000s ease-in-out 0s;
-}
-
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
@@ -97,39 +77,17 @@ input:-webkit-autofill {
   background-color: #999999;
 }
 
-::selection {
-  background-color: #4a4a4a;
-  color: #f9f9f9;
-}
-
-/* .hover-underline {
-  position: relative;
-} */
-/* .hover-underline:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(124, 235, 138);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: transform 200ms ease-in-out;
-}
-.hover-underline:hover:after {
-  visibility: visible;
-  transform: scaleX(1);
-} */
-
-
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #000000; 
+  margin: 0 10px;
+  border-bottom: medium rgba(148, 0, 211, 0) dotted;
 }
 
 a:hover {
   position: sticky;
-  border-bottom: 2px dotted;
+  border-bottom: medium #58a6ff dotted;
 
 }
 
@@ -156,9 +114,9 @@ a:hover {
   width: 32px;
   height: 32px;
   cursor: pointer;
-  border-radius: 5%;
+  /* border-radius: 5%; */
   flex-shrink: 0;
-  margin-right: 10px;
+  display: inline-block;
   user-select: none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
@@ -186,13 +144,12 @@ a:hover {
 
 .footer {
   padding: 15px 0;
-  font-size: 14px;
+
   /* border: medium solid #000000; */
 }
 
 .footer a {
-  text-decoration: underline;
-  color: #000000;
+  color: #000000c2;
   padding: 0 4px;
   white-space: nowrap;
 }

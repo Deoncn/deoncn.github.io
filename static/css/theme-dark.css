@@ -1,18 +1,14 @@
 html.dark {
-  color: #c9d1d9;
+  color: #ffffff;
   background: #28303D;
 }
 html.dark body {
-	border: medium solid #ffffff;
+	border: thin solid #ffffffc2;
 }
 
 html.dark a {
   color: whitesmoke;
 }
-/* 
-html.dark .header .menu a {
-  color:#ffffff;
-} */
 
 html.dark ::selection {
   background-color: #327bd4;
@@ -26,14 +22,21 @@ html.dark img {
   filter: brightness(0.8) contrast(1.2);
 }
 html.dark .footer a {
-  color: #58a6ff;
+  color: #ffffff;
 }
 html.dark .list-category div a {
   border-bottom: 1px solid #8b949e;
 }
 html.dark .list-post li .date {
-  color: #8b949e;
+  color: #87b139;
 }
+html.dark .list-post > h2 {
+  color: #9bee01;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
 html.dark .list-post li .categories a {
   color: #8b949e;
 }
