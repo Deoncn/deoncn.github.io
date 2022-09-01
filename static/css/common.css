@@ -111,8 +111,8 @@ a:hover {
 }
 
 .header .logo {
-  width: 32px;
-  height: 32px;
+  /* width: 32px;
+  height: 32px; */
   cursor: pointer;
   /* border-radius: 5%; */
   flex-shrink: 0;
@@ -120,6 +120,11 @@ a:hover {
   user-select: none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
+
+.header .logodownh2 {
+  text-align: center;
+}
+
 
 .header .menu {
   margin-right: -9px;
