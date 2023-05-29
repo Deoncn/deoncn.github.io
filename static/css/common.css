@@ -12,7 +12,7 @@
 }
 
 html {
-  color: #000000ab;
+  color: #000000;
   background: #B7BCBC;
   scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
@@ -27,8 +27,8 @@ html {
 }
 
 body {
-  max-width: 720px;
-  padding: 0 14px;
+  max-width: 900px;
+  padding: 14 14px;
   margin-top: 100px;
   margin-right: auto;
   margin-bottom: 100px;
@@ -90,7 +90,7 @@ a {
 
 a:hover {
   position: sticky;
-  border-bottom: medium #58a6ff dotted;
+  border-bottom: 2px dotted;
 
 }
 
@@ -110,7 +110,7 @@ a:hover {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  background-color: #0021db46;
+  background-color: #e1e9e9;
 }
 
 .header .logo {
@@ -157,15 +157,30 @@ a:hover {
 }
 
 .footer a {
-  color: #000000c2;
+  color: #d9230f;
   padding: 0 4px;
   white-space: nowrap;
 }
 
 
+.footer-btn.theme-toggler {
+  right: 16px;
+  bottom: 64px;
+}
 
-
-
+footer-btn {
+  position: fixed;
+  z-index: 99;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+}
 
 
 
