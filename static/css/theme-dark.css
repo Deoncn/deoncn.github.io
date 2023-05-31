@@ -3,7 +3,11 @@ html.dark {
   background: #28303D;
 }
 html.dark body {
-	border: thin solid #ffffffc2;
+	/* border: thin solid #ffffffc2; */
+}
+
+html.dark .header{
+  background-color: #374050;
 }
 
 html.dark a {

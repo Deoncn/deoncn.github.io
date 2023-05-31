@@ -29,11 +29,11 @@ html {
 body {
   max-width: 900px;
   padding: 14 14px;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-right: auto;
   margin-bottom: 100px;
   margin-left: auto;
-  border: thin solid #0000006c;
+  /* border: thin solid #0000006c; */
 }
 
 ol,
@@ -152,7 +152,7 @@ a:hover {
 
 .footer {
   padding: 15px 0;
-
+  
   /* border: medium solid #000000; */
 }
 
