@@ -3,12 +3,13 @@ layout: page
 title: 友情链接
 ---
 
+<h1>友情链接</h1>
 
-<ul>
+<div class="row page-links mb-4 mt-3">
     {%- for link in site.links %}
-    <li>
-      <p><a href="{{ link.url }}" title="{{ link.desc }}" target="_blank">{{ link.title }}</a></p>
-      <p><img src="{{ link.url }}/favicon.ico" alt="" style="width: 10%;"></p>
-    </li>
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 link mb-3">
+          <img src="{{ link.img }}" alt="" style="width: 30px;">
+          <a href="{{ link.url }}" title="{{ link.desc }}" target="_blank">{{ link.title }}</a>
+      </div>
     {%- endfor %}
-</ul>
+  </div>

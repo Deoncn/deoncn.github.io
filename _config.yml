@@ -66,8 +66,11 @@ extMath: false
 # 友情链接
 links:
   - title: 文科中的技术宅
-    url: https://www.townwang.com
+    url: https://www.townwang.com/
+    img: https://www.townwang.com/favicon.ico
   - title: Py's Whisper
     url: https://whisper.pyliubaolin.top/
+    img: https://s.nmxc.ltd/sakurairo_vision/@2.5/basic/favicon.ico
   - title: Quericy
     url: https://quericy.me/about/
+    img: https://quericy.me/assets/images/quericy_avatar.jpeg
