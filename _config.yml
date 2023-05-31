@@ -38,18 +38,18 @@ tucaoUrl: https://support.qq.com/products/297659
 menu:
   - title: 首页
     url: /
-  - title: 文章归档
+  - title: 文章分类
     url: /pages/categories.html
-  - title: 搜索
-    url: /pages/search.html
   - title: 关于博客
     url: /pages/about.html
   - title: 友情链接
     url: /pages/links.html
   - title: 留言板
-    url: /pages/categories.html
+    url: /pages/chat.html
   - title: 博客统计
-    url: /pages/categories.html
+    url: /pages/data.html
+  - title: 搜索
+    url: /pages/search.html    
 
 # 点击页面文字冒出特效,不需要请设置为false
 extClickEffect: false
