@@ -70,7 +70,7 @@ title: 统计
             legend: {
                 orient: 'vertical',
                 right: 'right',
-                top:'middle'
+                top: 'middle'
             },
 
             aria: {
@@ -103,14 +103,49 @@ title: 统计
     <hr>
     <h2>文章更新</h2>
     <p>下面是 2022年10月04日 到 2023年06月01日 的文章更新情况</p>
-    <div id="post-chart" role="img" aria-label="用于显示文章更新动态的日历图" _echarts_instance_="ec_1685571164657"
-        style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative;">
-        <div style="position: relative; width: 730px; height: 250px; padding: 0px; margin: 0px; border-width: 0px;">
-            <canvas data-zr-dom-id="zr_0" width="730" height="250"
-                style="position: absolute; left: 0px; top: 0px; width: 730px; height: 250px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas>
-        </div>
-        <div></div>
-    </div>
+123
+    <div id="post-chart" style="width: 730px;height:250px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('post-chart'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                top: 30,
+                left: 'center',
+                text: 'Daily Step Count'
+            },
+            tooltip: {},
+            visualMap: {
+                min: 0,
+                max: 10000,
+                type: 'piecewise',
+                orient: 'horizontal',
+                left: 'center',
+                top: 65
+            },
+            calendar: {
+                top: 120,
+                left: 30,
+                right: 30,
+                cellSize: ['auto', 13],
+                range: '2016',
+                itemStyle: {
+                    borderWidth: 0.5
+                },
+                yearLabel: { show: false }
+            },
+            series: {
+                type: 'heatmap',
+                coordinateSystem: 'calendar',
+                data: getVirtualData('2016')
+            }
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
     <hr>
     <h2>评论动态</h2>
     <p>下面是 2022年10月04日 到 2023年06月01日 的评论动态</p>
