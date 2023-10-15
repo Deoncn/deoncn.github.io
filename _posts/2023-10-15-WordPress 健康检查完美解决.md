@@ -46,9 +46,9 @@ RewriteRule . /index.php [L]
 
 ```
 
-4. Php 问题请参考 Debian 安装 PHP
+4.Php 问题请参考 Debian 安装 PHP
 
-5. 缓存Cache 按照如下设置
+5.缓存Cache 按照如下设置
 
 
 ```
