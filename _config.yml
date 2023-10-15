@@ -25,7 +25,7 @@ baseurl: ''
 
 #个人信息配置
 #头像
-headerimg: https://liudawei.dynv6.net/wp-content/uploads/2023/05/Zombatar_2-40x40.jpg
+headerimg: https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/1609160/5389c02f03de05deb036fa1cbcfcd64ed24b2cbb.gif
 #github主页地址
 githubmainpage: https://github.com/deoncn
 # 吐个槽地址，会在chat页面中重定向到该地址
