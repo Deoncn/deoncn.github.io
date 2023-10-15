@@ -1,12 +1,11 @@
-
 ---
 layout: mypost
 title: Debian11 安装 ruby jekyll
 categories: [WEB]
 ---
 
-Debian11 安装 ruby jekyll
 
+Debian11 安装 ruby jekyll
 
 
 ```
