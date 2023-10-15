@@ -7,11 +7,12 @@ categories: [WEB]
 
 1、WordPress FTP 服务器的问题
 
-编辑  <font face="仿宋" color=red>wp-config.php</font> file:
+编辑 <font face="仿宋" color=red>wp-config.php</font> file:
 
 ```
 define('FS_METHOD','direct');
 ```
+
 2、WordPress 安装时的目录权限问题
 ```
 chmod -R 777 /var/www/html/
@@ -30,6 +31,7 @@ chmod 777 *.
 # 在“BEGIN WordPress”与“END WordPress”之间的指令（行）是
 # 动态生成的，只应被WordPress过滤器修改。
 # 任何对标记之间的指令的修改都会被覆盖。
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
