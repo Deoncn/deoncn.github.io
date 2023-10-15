@@ -55,3 +55,5 @@ RewriteRule . /index.php [L]
 /** The Cache  */
 define('WP_CACHE',true);
 ```
+
+
