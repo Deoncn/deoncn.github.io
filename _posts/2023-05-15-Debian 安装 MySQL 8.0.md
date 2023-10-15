@@ -39,7 +39,7 @@ Reading package lists... Done
 sudo apt-get install mysql-server
 
 ```
-![](https://deoncn.github.io/posts/2023-05-15-203516.jpg)
+![](https://deoncn.github.io/posts/2023-05-15-203516.png)
 
 
 3、处理 mysql 服务安全问题
