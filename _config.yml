@@ -18,14 +18,14 @@ exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.
 
 # 域名配置
 # baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
-domainUrl: 'https://deoncn.github.io'
+domainUrl: 'https://deoncn.github.io/'
 baseurl: ''
 
 
 
 #个人信息配置
 #头像
-headerimg: https://avatars.akamai.steamstatic.com/0f925738d426552fe02d54fa31dd472b8b024bfd_full.jpg
+headerimg: 'https://deoncn.github.io/MASK.jpg'
 #github主页地址
 githubmainpage: https://github.com/deoncn
 # 吐个槽地址，会在chat页面中重定向到该地址
