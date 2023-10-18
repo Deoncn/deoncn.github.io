@@ -27,7 +27,7 @@ baseurl: ''
 #头像
 headerimg: 'https://deoncn.github.io/MASK.jpg'
 #github主页地址
-githubmainpage: https://github.com/deoncn
+githubmainpage: 'https://github.com/deoncn'
 # 吐个槽地址，会在chat页面中重定向到该地址
 tucaoUrl: https://support.qq.com/products/297659
 
@@ -42,8 +42,11 @@ menu:
     url: /pages/categories.html
   - title: 关于博客
     url: /pages/about.html
-  - title: 友情链接
-    url: /pages/links.html
+
+  # 2023年10月18日 删除友情链接
+  # - title: 友情链接
+  #   url: /pages/links.html
+
   - title: 留言板
     url: /pages/chat.html
   - title: 博客统计
