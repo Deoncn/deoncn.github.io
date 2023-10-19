@@ -43,14 +43,9 @@ menu:
   - title: 关于博客
     url: /pages/about.html
 
-  # 2023年10月18日 删除友情链接
-  # - title: 友情链接
-  #   url: /pages/links.html
-
   - title: 留言板
     url: /pages/chat.html
-  - title: 博客统计
-    url: /pages/data.html
+
   - title: 搜索
     url: /pages/search.html    
 
