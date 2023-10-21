@@ -29,7 +29,7 @@ headerimg: 'https://deoncn.github.io/MASK.jpg'
 #github主页地址
 githubmainpage: 'https://github.com/deoncn'
 # 吐个槽地址，会在chat页面中重定向到该地址
-tucaoUrl: https://support.qq.com/products/297659
+tucaoUrl: 'https://github.com/Deoncn/deoncn.github.io/discussions'
 
 
 
@@ -40,6 +40,7 @@ menu:
     url: /
   - title: 文章分类
     url: /pages/categories.html
+    
   - title: 关于博客
     url: /pages/about.html
 
