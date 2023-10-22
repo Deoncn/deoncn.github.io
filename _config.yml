@@ -38,6 +38,7 @@ tucaoUrl: 'https://github.com/Deoncn/deoncn.github.io/discussions'
 menu:
   - title: 首页
     url: /
+    
   - title: 文章分类
     url: /pages/categories.html
     
