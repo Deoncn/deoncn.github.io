@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="content-language" content="zh-CN" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="supported-color-schemes" content="light dark">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="author" content="刘大尉" />
+  <meta name="description" content="Apache2 重写、重定向"/>
+  <meta name="keywords" content="刘大尉,WEB"/>
+  <link rel="icon" href="/static/img/sheep.png" />
+  <link rel="apple-touch-icon" href="/static/img/logo.png" />
+  <link rel="stylesheet" href="/static/css/common.css?t=20231227175603">
+  <link rel="stylesheet" href="/static/css/theme-dark.css?t=20231227175603">
+  <link rel="stylesheet" href="/static/css/post.css?t=20231227175603">
+  <link rel="stylesheet" href="/static/css/code-dark.css?t=20231227175603">
+  <link rel="stylesheet" href="/static/css/code-light.css?t=20231227175603">
+  <title>Apache2 重写、重定向</title>
+  <link rel="prefetch" href="/static/xml/search.xml?t=20231227175603">
+  <link rel="prefetch" href="/static/js/search.js?t=20231227175603">
+  
+  <!-- GOOGLE FONTS: Noto Sans Simplified Chinese /  -->
+  <!-- EMOJI 表情 + 英语 Regular400 Italic-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+SC&family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <!-- GOOGLE Material Symbol -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+  <script>
+    window.blog = {
+      baseurl:"",
+      buildAt:"20231227175603",
+      darkTheme: false,
+      setDarkTheme: function (dark) {
+        this.darkTheme = Boolean(dark);
+        document.documentElement.className = this.darkTheme ? 'dark': '';
+        document.querySelector('meta[name=theme-color]').setAttribute('content', this.darkTheme ? '#2D2E32': '#FFFFFF');
+      }
+    }
+    if (sessionStorage.darkTheme !== undefined) {
+      blog.setDarkTheme(sessionStorage.darkTheme === 'true'); // 记忆值，单个窗口内有效
+    } else {
+      blog.setDarkTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches); // 跟随系统
+    }
+    if (window.matchMedia) {
+      var media = window.matchMedia('(prefers-color-scheme: dark)');
+      media.addListener(function (ev) {
+        blog.setDarkTheme(ev.currentTarget.matches);
+        sessionStorage.removeItem('darkTheme');
+      });
+    }
+  </script>
+</head>
+<body ondragstart="return false;">
+<header class="header">
+  
+
+    <div>
+      <img class="logo" src="https://avatars.githubusercontent.com/u/51418619"
+      alt="logo" />
+      <!-- <h2 class="logodownh2">Deoncn's blog.</h2> -->
+    </div>
+
+
+  <nav class="menu">
+    <a href="/" class="hover-underline">首页</a>
+    <a href="/pages/categories.html" class="hover-underline">文章分类</a>
+    <a href="/pages/about.html" class="hover-underline">关于博客</a>
+    <a href="/pages/chat.html" class="hover-underline">留言板</a>
+    <a href="/pages/search.html" class="hover-underline">搜索</a>
+    </nav>
+  
+</header>
+
+
+<div class="page page-post">
+  <h1 class="title" id="Apache2 重写、重定向">Apache2 重写、重定向</h1>
+  
+  <div class="subtitle">刘大尉 于 2023-05-16 发布</div>
+  
+  <div class="post">
+    <h1 id="ssl---开启ssl">SSL - 开启SSL</h1>
+
+<h2 id="enabling-ssl">Enabling SSL</h2>
+
+<p>To enable SSL, type (as user root):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a2ensite default-ssl
+a2enmod ssl
+</code></pre></div></div>
+
+<p>If you want to use self-signed certificates, you should install the ssl-cert
+package (see below). Otherwise, just adjust the SSLCertificateKeyFile and
+SSLCertificateFile directives in ‘/etc/apache2/sites-available/default-ssl.conf’
+to point to your SSL certificate. Then restart apache:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>service apache2 restart
+</code></pre></div></div>
+
+<p>The SSL key file should only be readable by root; the certificate file may be
+globally readable. These files are read by the Apache parent process which runs
+as root, and it is therefore not necessary to make the files readable by the
+www-data user.</p>
+
+<p>开启 rewrite</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ a2enmod rewrite
+</code></pre></div></div>
+
+<p>开启重写后可以配置，Wordpress 的固定链接 并且 设置 80 端口的 全部流量重定向 到 443 端口，网站实现 全 Https 访问。</p>
+
+<p>修改 sites-enable/ 下的 000-default.conf.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine on #启动rewrite引擎
+RewriteCond %{SERVER_PORT} 80 #rewrite的条件是访问的服务器端口是80端口
+RewriteRule ^(.*)$ https://%{HTTP_HOST}$1 [R,L] #规则
+
+</code></pre></div></div>
+
+<p>若要开启 WordPress 固定链接的调整，在 apache2.conf 下修改两处地方。</p>
+
+<p><img src="https://deoncn.github.io/posts/2023-05-16-003808.png" alt="" /></p>
+
+<p>修改他们两处为 All. 即可解决固定链接的重写和覆写。AllowwOverride None 则会完全忽略 .htaccess 文件，自然项目中所定义的 .htaccess 文件就不会生效了。</p>
+
+  </div>
+  
+</div>
+<footer class="footer">
+  <center>
+
+    <span>2021 - 2023</span>
+    <a href="/static/xml/rss.xml" target="_blank">RSS</a>
+    <a href="https://jekyllrb.com/" target="_blank">JEKYLL</a>
+    THEME
+    <a href="https://github.com/deoncn/deoncn.github.io" target="_blank">DEON'S BLOG</a>
+
+  </center>
+
+</footer>
+
+<div id="to-top">
+  <!-- <span></span> -->
+  <span class="material-symbols-outlined">
+    arrow_upward
+    </span>
+  <!-- <span></span> -->
+</div><script type="text/javascript" src="/static/js/blog.js?t=20231227175603"></script>
+<script type="text/javascript" src="/static/js/search.js?t=20231227175603"></script>
+</body>
+</html>

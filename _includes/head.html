@@ -17,6 +17,9 @@
   <meta name="description" content="{{ site.description }}"/>
   <meta name="keywords" content="{{ site.keywords }}"/>
   {% endif -%}
+
+
+
   <link rel="icon" href="{{site.favcicon}}" />
   <link rel="apple-touch-icon" href="{{site.baseurl}}/static/img/logo.png" />
   <link rel="stylesheet" href="{{site.baseurl}}/static/css/common.css?t={{buildAt}}">
@@ -34,8 +37,12 @@
   <link rel="prefetch" href="{{site.baseurl}}/static/xml/search.xml?t={{ buildAt }}">
   <link rel="prefetch" href="{{site.baseurl}}/static/js/search.js?t={{ buildAt }}">
   
-  <script src="{{site.baseurl}}/static/js/echarts.js"></script>
-
+  <!-- GOOGLE FONTS: Noto Sans Simplified Chinese /  -->
+  <!-- EMOJI 表情 + 英语 Regular400 Italic-->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+SC&family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <!-- GOOGLE Material Symbol -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
   <script>
     window.blog = {
       baseurl:"{{site.baseurl}}",

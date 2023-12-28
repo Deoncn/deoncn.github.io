@@ -6,7 +6,7 @@ description: 刘大尉 #描述
 keywords: Blog,Java,Html,JavaScript #关键词
 author: 刘大尉 #作者
 footerText: '2021 - 2023' #页脚时间
-favcicon: ''  #网站图标
+favcicon: '/static/img/sheep.png'  #网站图标
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
@@ -25,7 +25,7 @@ baseurl: ''
 
 #个人信息配置
 #头像
-headerimg: 'https://deoncn.github.io/MASK.jpg'
+headerimg: 'https://avatars.githubusercontent.com/u/51418619'
 #github主页地址
 githubmainpage: 'https://github.com/deoncn'
 # 吐个槽地址，会在chat页面中重定向到该地址
