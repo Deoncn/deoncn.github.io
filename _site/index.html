@@ -11,32 +11,51 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="applicable-device" content="pc,mobile">
   <meta name="author" content="刘大尉" />
-  <meta name="description" content="刘大尉"/>
-  <meta name="keywords" content="Blog,Java,Html,JavaScript"/>
+  <meta name="description" content="刘大尉" />
+  <meta name="keywords" content="Blog,Java,Html,JavaScript" />
   <link rel="icon" href="/static/img/sheep.png" />
   <link rel="apple-touch-icon" href="/static/img/logo.png" />
-  <link rel="stylesheet" href="/static/css/common.css?t=20231228141855">
-  <link rel="stylesheet" href="/static/css/theme-dark.css?t=20231228141855">
-  <link rel="stylesheet" href="/static/css/page.css?t=20231228141855">
+  <link rel="stylesheet" href="/static/css/common.css?t=20231229132332">
+  <link rel="stylesheet" href="/static/css/theme-dark.css?t=20231229132332">
+  <link rel="stylesheet" href="/static/css/post.css?t=20231229132332">
+  <link rel="stylesheet" href="/static/css/code-dark.css?t=20231229132332">
+  <link rel="stylesheet" href="/static/css/code-light.css?t=20231229132332">
   <title>Deoncn's blog.</title>
-  <link rel="prefetch" href="/static/xml/search.xml?t=20231228141855">
-  <link rel="prefetch" href="/static/js/search.js?t=20231228141855">
-  
+  <link rel="prefetch" href="/static/xml/search.xml?t=20231229132332">
+  <link rel="prefetch" href="/static/js/search.js?t=20231229132332">
+
   <!-- GOOGLE FONTS: Noto Sans Simplified Chinese /  -->
   <!-- EMOJI 表情 + 英语 Regular400 Italic-->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+SC&family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+SC&family=Roboto:ital@1&display=swap"
+    rel="stylesheet">
   <!-- GOOGLE Material Symbol -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-  
+
+  <!-- Gittalk -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+  <script> var gitalk = new Gitalk({
+      clientID: 'a638eb88aba3e148d997',
+      clientSecret: '8e5f758d3bc268dbb61e6234bd577f5c349d3bd2',
+      repo: 'deoncn.github.io',
+      owner: 'deoncn',
+      admin: ['deoncn'],
+      id: location.pathname,      // Ensure uniqueness and length less than 50
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+  </script>
+
   <script>
     window.blog = {
-      baseurl:"",
-      buildAt:"20231228141855",
+      baseurl: "",
+      buildAt: "20231229132332",
       darkTheme: false,
       setDarkTheme: function (dark) {
         this.darkTheme = Boolean(dark);
-        document.documentElement.className = this.darkTheme ? 'dark': '';
-        document.querySelector('meta[name=theme-color]').setAttribute('content', this.darkTheme ? '#2D2E32': '#FFFFFF');
+        document.documentElement.className = this.darkTheme ? 'dark' : '';
+        document.querySelector('meta[name=theme-color]').setAttribute('content', this.darkTheme ? '#2D2E32' : '#FFFFFF');
       }
     }
     if (sessionStorage.darkTheme !== undefined) {
@@ -45,15 +64,14 @@
       blog.setDarkTheme(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches); // 跟随系统
     }
     if (window.matchMedia) {
-      var media = window.matchMedia('(prefers-color-scheme: dark)');
+      var media = window.matchMedia('(prefers-color-scheme: dark)');
       media.addListener(function (ev) {
         blog.setDarkTheme(ev.currentTarget.matches);
         sessionStorage.removeItem('darkTheme');
       });
     }
   </script>
-</head>
-<body ondragstart="return false;">
+</head><body ondragstart="return false;">
 <header class="header">
   
 
@@ -65,9 +83,8 @@
 
 
   <nav class="menu">
-    <a href="/" class="hover-underline">首页</a>
-    <a href="/pages/categories.html" class="hover-underline">文章分类</a>
-    <a href="/pages/about.html" class="hover-underline">关于博客</a>
+    <a href="/" class="hover-underline">关于</a>
+    <a href="/pages/blog.html" class="hover-underline">文章</a>
     <a href="/pages/chat.html" class="hover-underline">留言板</a>
     <a href="/pages/search.html" class="hover-underline">搜索</a>
     </nav>
@@ -75,221 +92,19 @@
 </header>
 
 
-<div class="content">
-<div class="page page-index">
-  <div class="list-post">
-      <h2 id="2023">2023</h2>
-      <ul>
-        <li>
-          <span class="date">2023/12/20</span>
-          <div class="title">
-            <a href="/posts/2023/12/20/WIN10-%E6%BF%80%E6%B4%BB%E6%96%B9%E6%B3%95.html" class="hover-underline">WIN10 激活方法</a>
-          </div>
-          <div class="categories">
-            
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/10/15</span>
-          <div class="title">
-            <a href="/posts/2023/10/15/WordPress-%E5%81%A5%E5%BA%B7%E6%A3%80%E6%9F%A5%E5%AE%8C%E7%BE%8E%E8%A7%A3%E5%86%B3.html" class="hover-underline">WordPress 健康检查完美解决</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/08/11</span>
-          <div class="title">
-            <a href="/posts/2023/08/11/%E6%90%AD%E5%BB%BA-VPN-%E6%9C%8D%E5%8A%A1%E5%99%A8.html" class="hover-underline">搭建 VPN 服务器</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/08/11</span>
-          <div class="title">
-            <a href="/posts/2023/08/11/Trojan.html" class="hover-underline">Trojan</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/08/11</span>
-          <div class="title">
-            <a href="/posts/2023/08/11/Clash-%E4%B8%8B%E8%BD%BD%E5%8F%8A%E7%AE%80%E8%A6%81.html" class="hover-underline">Clash 下载及简要</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/08/11</span>
-          <div class="title">
-            <a href="/posts/2023/08/11/BBR-%E5%8A%A0%E9%80%9FDebian.html" class="hover-underline">BBR 加速Debian</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/29</span>
-          <div class="title">
-            <a href="/posts/2023/05/29/Debian11-%E5%AE%89%E8%A3%85-ruby-jekyll.html" class="hover-underline">Debian11 安装 ruby jekyll</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/17</span>
-          <div class="title">
-            <a href="/posts/2023/05/17/Vim-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86.html" class="hover-underline">Vim 常用命令整理</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/16</span>
-          <div class="title">
-            <a href="/posts/2023/05/16/%E8%8E%B7%E5%8F%96%E8%AF%81%E4%B9%A6%E6%96%87%E4%BB%B6%E5%BC%80%E5%90%AF-HTTPS-SSL.html" class="hover-underline">获取证书文件开启 HTTPS SSL</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/16</span>
-          <div class="title">
-            <a href="/posts/2023/05/16/%E5%8F%98%E5%BE%97%E5%86%B7%E8%A1%80-%E8%BF%99%E4%B9%9F%E8%AE%B8%E6%98%AF%E4%BF%9D%E6%8A%A4%E6%9C%BA%E5%88%B6%E5%9C%A8%E8%B5%B7%E4%BD%9C%E7%94%A8.html" class="hover-underline">变得冷血？这也许是保护机制在起作用</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#默认目录" class="hover-underline">默认目录</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/16</span>
-          <div class="title">
-            <a href="/posts/2023/05/16/Apache2-%E9%87%8D%E5%86%99-%E9%87%8D%E5%AE%9A%E5%90%91.html" class="hover-underline">Apache2 重写、重定向</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/16</span>
-          <div class="title">
-            <a href="/posts/2023/05/16/2023-%E8%A5%BF%E5%AE%89%E6%91%A9%E6%89%98%E8%BD%A6%E9%A9%BE%E9%A9%B6%E8%AF%81%E5%85%A8%E6%B5%81%E7%A8%8B.html" class="hover-underline">2023 西安摩托车驾驶证全流程</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/15</span>
-          <div class="title">
-            <a href="/posts/2023/05/15/Debian-%E5%AE%89%E8%A3%85-Php-7.4-%E4%BB%A5%E5%8F%8A%E6%89%A9%E5%B1%95.html" class="hover-underline">Debian 安装 Php 7.4 以及扩展</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/15</span>
-          <div class="title">
-            <a href="/posts/2023/05/15/Debian-%E5%AE%89%E8%A3%85-Apache2.html" class="hover-underline">Debian 安装 Apache2</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/05/15</span>
-          <div class="title">
-            <a href="/posts/2023/05/15/Debian-%E5%AE%89%E8%A3%85-MySQL-8.0.html" class="hover-underline">Debian 安装 MySQL 8.0</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/04/11</span>
-          <div class="title">
-            <a href="/posts/2023/04/11/Linux-%E5%91%BD%E4%BB%A4%E8%AE%B0%E5%BD%95.html" class="hover-underline">Linux 命令记录</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/01/11</span>
-          <div class="title">
-            <a href="/posts/2023/01/11/HELLO-WORLD.html" class="hover-underline">你好，世界！</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#默认分组" class="hover-underline">默认分组</a>
-          </div>
-        </li>
-        <li>
-          <span class="date">2023/01/02</span>
-          <div class="title">
-            <a href="/posts/2023/01/02/%E9%A1%B6%E7%BA%A7%E6%80%9D%E7%BB%B4.html" class="hover-underline">顶级思维</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#WEB" class="hover-underline">WEB</a>
-          </div>
-        </li>
-      </ul>
-    </div><div class="list-post">
-      <h2 id="2022">2022</h2>
-      <ul>
-        <li>
-          <span class="date">2022/03/25</span>
-          <div class="title">
-            <a href="/posts/2022/03/25/2022.html" class="hover-underline">2022 一句话</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#默认分组" class="hover-underline">默认分组</a>
-          </div>
-        </li>
-      </ul>
-    </div><div class="list-post">
-      <h2 id="2021">2021</h2>
-      <ul>
-        <li>
-          <span class="date">2021/08/18</span>
-          <div class="title">
-            <a href="/posts/2021/08/18/2021.html" class="hover-underline">2021 一句话</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#默认分组" class="hover-underline">默认分组</a>
-          </div>
-        </li>
-      </ul>
-    </div><div class="list-post">
-      <h2 id="2015">2015</h2>
-      <ul>
-        <li>
-          <span class="date">2015/01/01</span>
-          <div class="title">
-            <a href="/posts/2015/01/01/%E4%B8%BB%E9%A2%98%E9%A2%84%E8%A7%88.html" class="hover-underline">主题预览</a>
-          </div>
-          <div class="categories">
-            <a href="/pages/categories.html#Jekyll" class="hover-underline">Jekyll</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-</div>
+<div class="page page-post">
+  <h1 class="title" id="GROWING WAY">GROWING WAY</h1>
+  
+  <div class="post">
+    
 
+  </div>
+  
 </div>
 <footer class="footer">
   <center>
 
-    <span>2021 - 2023</span>
+    <span>2021 - 2024</span>
     <a href="/static/xml/rss.xml" target="_blank">RSS</a>
     <a href="https://jekyllrb.com/" target="_blank">JEKYLL</a>
     THEME
@@ -305,7 +120,7 @@
     arrow_upward
     </span>
   <!-- <span></span> -->
-</div><script type="text/javascript" src="/static/js/blog.js?t=20231228141855"></script>
-<script type="text/javascript" src="/static/js/search.js?t=20231228141855"></script>
+</div><script type="text/javascript" src="/static/js/blog.js?t=20231229132332"></script>
+<script type="text/javascript" src="/static/js/search.js?t=20231229132332"></script>
 </body>
 </html>

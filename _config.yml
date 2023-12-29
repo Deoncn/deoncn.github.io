@@ -5,7 +5,7 @@ title: Deoncn's blog.   #标题 ：例如：tile：刘大尉
 description: 刘大尉 #描述
 keywords: Blog,Java,Html,JavaScript #关键词
 author: 刘大尉 #作者
-footerText: '2021 - 2023' #页脚时间
+footerText: '2021 - 2024' #页脚时间
 favcicon: '/static/img/sheep.png'  #网站图标
 
 # 这些不要动
@@ -36,14 +36,11 @@ tucaoUrl: 'https://github.com/Deoncn/deoncn.github.io/discussions'
 
 # 菜单
 menu:
-  - title: 首页
+  - title: 关于
     url: /
-    
-  - title: 文章分类
-    url: /pages/categories.html
-    
-  - title: 关于博客
-    url: /pages/about.html
+
+  - title: 文章
+    url: /pages/blog.html
 
   - title: 留言板
     url: /pages/chat.html

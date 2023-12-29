@@ -2,6 +2,7 @@
 layout: page
 title: 博客
 ---
+
 <div class="page page-index">
   {% for post in site.posts  -%}
     {%- capture post_year %}{{ post.date | date: "%Y" }}{% endcapture -%}
