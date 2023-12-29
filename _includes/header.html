@@ -1,19 +1,18 @@
 <header class="header">
+
+  <div>
+
+    <img class="logo" src="{{site.headerimg}}" alt="logo" />
+    
   
 
-    <div>
-      <img class="logo" src="{{site.headerimg}}"
-      alt="logo" />
-      <!-- <h2 class="logodownh2">{{site.title}}</h2> -->
     </div>
-
-
   <nav class="menu">
+
     {% for menu in site.menu -%}
     <a href="{{ site.baseurl }}{{ menu.url }}" class="hover-underline">{{ menu.title }}</a>
     {% endfor -%}
-  </nav>
   
+  </nav>
+
 </header>
-
-

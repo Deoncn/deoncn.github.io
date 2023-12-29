@@ -39,6 +39,13 @@
   <title>{{ site.title }}</title>
   {%- endif %}
 
+  {%- if page.layout == "chat" %}
+  <link rel="stylesheet" href="{{site.baseurl}}/static/css/post.css?t={{buildAt}}">
+  <link rel="stylesheet" href="{{site.baseurl}}/static/css/code-dark.css?t={{buildAt}}">
+  <link rel="stylesheet" href="{{site.baseurl}}/static/css/code-light.css?t={{buildAt}}">
+  <title>{{ site.title }}</title>
+  {%- endif %}
+
   {%- if page.layout == "page" %}
   <link rel="stylesheet" href="{{site.baseurl}}/static/css/page.css?t={{buildAt}}">
   <title>{{ site.title }}</title>
@@ -52,7 +59,8 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+SC&family=Roboto:ital@1&display=swap"
     rel="stylesheet">
   <!-- GOOGLE Material Symbol -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"   rel="stylesheet">
 
   <!-- Gittalk -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">

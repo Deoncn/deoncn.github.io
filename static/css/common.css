@@ -26,6 +26,7 @@ body {
   /* border: thin solid #0000006c; */
 }
 
+
 ol,
 ul {
   list-style: none;
@@ -89,6 +90,8 @@ a:hover {
 /* 页头 */
 .header {
 
+  min-height: 64px;
+
   /* 浮动效果 */
   position: -webkit-sticky;
   position: sticky;
@@ -104,8 +107,8 @@ a:hover {
 }
 
 .header .logo {
-  width: 32px;
-  height: 32px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   border-radius: 5%;
   flex-shrink: 0;
@@ -197,13 +200,14 @@ footer-btn {
 }
 
  #to-top>span {
+  text-align: center;
   display: block;
-  width: 42%;
-  height: 42%;
+   width: 50%;
+  height: 50%; 
   position: absolute;
-  top: 13px;
-  left: 25%;
-  /* transform: translateX(-50%) rotate(45deg);  */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg); 
 }
 
 #to-top>span:first-child {
@@ -212,7 +216,7 @@ footer-btn {
 
 #to-top>span:last-child {
   background-color: #000000;
-  /* transform: translate(-50%, 16%) rotate(45deg); */
+  transform: translate(-50%, 16%) rotate(45deg);
 } 
 
 

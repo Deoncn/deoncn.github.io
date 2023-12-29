@@ -408,9 +408,11 @@ blog.addLoadEvent(function () {
   }
 })
 
+
 // 切换夜间模式
 blog.addLoadEvent(function () {
   var $logo = document.querySelector('.header .logo')
+
   blog.addEvent($logo, 'click', function () {
     blog.setDarkTheme(!blog.darkTheme)
     sessionStorage.darkTheme = blog.darkTheme
