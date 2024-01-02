@@ -6,7 +6,7 @@ description: 刘大尉 #描述
 keywords: Blog,Java,Html,JavaScript #关键词
 author: 刘大尉 #作者
 footerText: '2021 - 2024' #页脚时间
-favcicon: '/static/img/sheep.png'  #网站图标
+favcicon: '/favicon.ico'  #网站图标
 
 # 这些不要动
 permalink: /posts/:year/:month/:day/:title.html
