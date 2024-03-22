@@ -1,0 +1,53 @@
+---
+layout: mypost
+title: 黎明杀机服务器地址
+categories: [US OF A]
+---
+
+
+```
+服务器通信API(HTTPS)
+steam.live.bhvrdbd.com
+cdn.live.dbd.bhvronline.com
+brill.live.bhvrdbd.com
+rtm.live.bhvrdbd.com
+gamelogs.live.bhvrdbd.com
+
+早期大陆地区是P2P(屠夫做主机),其他区域为服务器联机
+现在全球均为服务器联机(AWS)
+
+锁匹配区域方法:
+
+将下列条目写入hosts,需要进哪个区域就在IP最前面加#注释掉即可
+(记得要重开游戏)
+
+#亚太区域 (孟买)
+255.255.255.255 gamelift.ap-south-1.amazonaws.com
+#亚太地区 (东京)
+255.255.255.255 gamelift.ap-northeast-1.amazonaws.com
+#亚太地区 (新加坡)
+255.255.255.255 gamelift.ap-southeast-1.amazonaws.com
+#亚太地区 (悉尼)
+255.255.255.255 gamelift.ap-southeast-2.amazonaws.com
+#亚太区域 (首尔)
+255.255.255.255 gamelift.ap-northeast-2.amazonaws.com
+#南美洲 (圣保罗)
+255.255.255.255 gamelift.sa-east-1.amazonaws.com
+#美国西部 (俄勒冈)
+255.255.255.255 gamelift.us-west-2.amazonaws.com
+#美国东部 (弗吉尼亚北部)
+255.255.255.255 gamelift.us-east-1.amazonaws.com
+#歐洲 (法蘭克福)
+255.255.255.255 gamelift.eu-central-1.amazonaws.com
+#歐洲 (愛爾蘭)
+255.255.255.255 gamelift.eu-west-1.amazonaws.com
+```
+现在可以通过 [PSPING](https://learn.microsoft.com/en-us/sysinternals/downloads/psping) 来测试 443 端口的连接速度，游戏服务器一般都通过443端口通信。
+
+这样来确定，最近的服务器IP 地址，在 Hosts 里进行锁区。
+Hosts 快速编辑工具推荐：[SwitchHosts](https://github.com/oldj/SwitchHosts)
+
+
+#### 参考资料
+
+- [黎明杀机[note] by 羽翼城|Dogfight360](https://www.dogfight360.com/blog/1910/)
