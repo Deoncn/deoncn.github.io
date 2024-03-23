@@ -81,7 +81,11 @@ a {
   border-bottom: 2px dotted;
 }
 
-
+.gt-container .gt-comment-username:hover{
+  position: sticky;
+  border-bottom: 2px dotted;
+  text-decoration: none;
+}
 
 /* 页头 */
 .header {
