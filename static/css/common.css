@@ -76,7 +76,7 @@ a {
   border-bottom: medium rgba(148, 0, 211, 0) dotted;
 }
 
-a:hover {
+.menu a:hover {
   position: sticky;
   border-bottom: 2px dotted;
 }
