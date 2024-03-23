@@ -10,10 +10,7 @@ html {
   text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  font-family: 'Noto Color Emoji', sans-serif;
   font-family: 'Noto Sans SC', sans-serif;
-  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -146,7 +143,7 @@ a:hover {
 .footer {
   padding: 15px 0;
 
-  /* border: medium solid #000000; */
+  border: medium solid #000000;
 }
 
 .footer a {
