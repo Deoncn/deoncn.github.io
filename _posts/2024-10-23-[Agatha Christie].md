@@ -1,30 +1,27 @@
 ---
 layout: mypost
-title: Agatha_Christie
+title: Agatha Christie
 categories: [人物]
 ---
  
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Agatha_Christie.png" alt="MDN logo" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Agatha_Christie.png" alt="Agatha_Christie" />
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Agatha_Christie_by_Douglas_John_Connah.jpg"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Agatha_Christie_by_Douglas_John_Connah.jpg" />
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Agatha_Christie_as_a_child_No_1.jpg"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Agatha_Christie_as_a_child_No_1.jpg" />
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/83/DAME_AGATHA_CHRISTIE_1890-1976_Detective_novelist_and_playwright_lived_here_1934-1941.jpg"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/83/DAME_AGATHA_CHRISTIE_1890-1976_Detective_novelist_and_playwright_lived_here_1934-1941.jpg" width="100px" />
+
 
 <p>
+1920年代
 
+<ol type="a">
+    <li>1920 《史岱尔庄谋杀案》/《斯泰尔斯的神秘案件》/《斯泰尔斯庄园奇案》（波洛/波洛登场）</li>
+    <li>1922 《暗藏杀机》/《年轻冒险家》/ 《隐身魔鬼》（The Secret Adversary）（汤米与杜本丝/塔彭丝登场）</li>
+    <li>1923 《高尔夫球场命案》/《高尔夫球场疑云》（Murder on the Links）</li>
+    <li>1924 《褐衣男子》（The Man in the Brown Suit）</li>
+
+</ol>
 </p>
-
-<p style="text-align: center">本节内容</p>
-
-- ==语法==
-- 数据类型
-- 流控制语句
-- 理解函数
-
-### ==1 区分大小写==
-
-ECMAScript 中一切都区分大小写。无论是变量、函数名还是操作符，都区分大小写。换句话说，<span style="background-color:rgb(216,27,68)"><span style="color:rgb(0,0,0)">**变量test 和变量Test 是两个不同的变量。**</span></span>类似地，typeof 不能作为函数名，因为它是一个关键字（后面会介绍）。但Typeof 是一个完全有效的函数名。
-
 
