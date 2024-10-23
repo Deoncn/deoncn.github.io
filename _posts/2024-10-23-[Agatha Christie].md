@@ -1,7 +1,7 @@
 ---
 layout: mypost
-title: Agatha Christie
-categories: [默认分类]
+title: Agatha_Christie
+categories: [人物]
 ---
  
 <p style="text-align: center">本节内容</p>
