@@ -4,9 +4,17 @@ title: Agatha_Christie
 categories: [人物]
 ---
  
-<img src="https://en.wikipedia.org/wiki/Agatha_Christie#/media/File:Agatha_Christie.png"/>
-<img src="https://en.wikipedia.org/wiki/Agatha_Christie#/media/File:Agatha_Christie_by_Douglas_John_Connah.jpg"/>
-<img src="https://en.wikipedia.org/wiki/Agatha_Christie#/media/File:Agatha_Christie_as_a_child_No_1.jpg"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Agatha_Christie.png" alt="MDN logo" />
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Agatha_Christie_by_Douglas_John_Connah.jpg"/>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Agatha_Christie_as_a_child_No_1.jpg"/>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/83/DAME_AGATHA_CHRISTIE_1890-1976_Detective_novelist_and_playwright_lived_here_1934-1941.jpg"/>
+
+<p>
+
+</p>
 
 <p style="text-align: center">本节内容</p>
 
