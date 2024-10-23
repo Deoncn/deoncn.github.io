@@ -4,6 +4,10 @@ title: Agatha_Christie
 categories: [人物]
 ---
  
+<img src="https://en.wikipedia.org/wiki/Agatha_Christie#/media/File:Agatha_Christie.png"/>
+<img src="https://en.wikipedia.org/wiki/Agatha_Christie#/media/File:Agatha_Christie_by_Douglas_John_Connah.jpg"/>
+<img src="https://en.wikipedia.org/wiki/Agatha_Christie#/media/File:Agatha_Christie_as_a_child_No_1.jpg"/>
+
 <p style="text-align: center">本节内容</p>
 
 - ==语法==
