@@ -14,10 +14,11 @@ title: 博客
       <ul>
     {%- endif %}
         <li>
-          <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span>
           <div class="title">
             <a href="{{ site.baseurl | append: post.url }}" class="hover-underline">{{ post.title }}</a>
           </div>
+          <!-- <span class="date">{{ post.date | date: "%Y/%m/%d" }}</span> -->
+          <span class="date">{{ post.date | date: "%m/%d" }}</span>
           <div class="categories">
             {% for categorie in post.categories -%}
             <a href="{{site.baseurl}}/pages/categories.html#{{ categorie }}" class="hover-underline">{{ categorie }}</a>

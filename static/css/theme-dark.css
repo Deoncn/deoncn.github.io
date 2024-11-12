@@ -1,13 +1,15 @@
 html.dark {
   color: #ffffff;
-  background: #28303D;
+  /* background: #28303D;(明亮蓝色 停用于 2024年11月13日 00:35) */
+  background: #21262d;
 }
 html.dark body {
 	/* border: thin solid #ffffffc2; */
 }
 
 html.dark .header{
-  background-color: #374050;
+  background-color: #21262d;
+  border: 1px solid #327bd4;
 }
 
 html.dark a {
@@ -32,10 +34,11 @@ html.dark .list-category div a {
   border-bottom: 1px solid #8b949e;
 }
 html.dark .list-post li .date {
-  color: #87b139;
+  color: #b0b0b095;
 }
 html.dark .list-post > h2 {
-  color: #9bee01;
+  text-align: right;
+  color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   padding: 12px 0;
