@@ -1,7 +1,7 @@
 ---
 layout: mypost
 title: 你好，世界！
-categories: [默认分组]
+categories: [默认]
 ---
 
 
