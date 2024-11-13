@@ -28,8 +28,14 @@ html.dark img {
   filter: brightness(0.8) contrast(1.2);
 }
 html.dark .footer a {
-  color: #d9230f;
+  color: #8b949e;
 }
+
+html.dark.footer a:hover{
+  position: sticky;
+  border-bottom: 2px dotted;
+}
+
 html.dark .list-category div a {
   border-bottom: 1px solid #8b949e;
 }
