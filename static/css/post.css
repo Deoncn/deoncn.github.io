@@ -1,7 +1,9 @@
 .page-post {
+  padding: auto;
   font-size: 15px;
   line-height: 2;
   word-break: break-all;
+  padding: 2% 4%;
 }
 .page-post .title {
   font-size: 32px;

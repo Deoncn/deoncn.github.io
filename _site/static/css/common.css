@@ -94,7 +94,7 @@ a {
 /* 页头 */
 .header {
 
-  border: 1px solid #327bd4;
+  border: 1px solid #000000;
   min-height: 64px;
 
   /* 浮动效果 */
@@ -120,6 +120,7 @@ a {
   display: inline-block;
   user-select: none;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 0 6px 0 0;
 }
 
 .header .logodownh2 {

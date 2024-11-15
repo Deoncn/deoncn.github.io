@@ -9,7 +9,7 @@ html.dark body {
 
 html.dark .header{
   background-color: #21262d;
-  border: 1px solid #327bd4;
+  border: 1px solid #ffffff;
 }
 
 html.dark a {
@@ -69,7 +69,6 @@ html.dark .page-post .subtitle {
 
 /* 主页文字 */
 html.dark .list-post li .title a {
-  font-size: 20px;
   color:rgb(255, 255, 255);
 }
 
