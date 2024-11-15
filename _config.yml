@@ -56,7 +56,7 @@ extClickEffect: false
 extAdsense: false
 
 # 数学公式支持，比较影响加载速度,不需要请设置为false
-extMath: false
+extMath: true
 
 
 

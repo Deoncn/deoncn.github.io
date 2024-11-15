@@ -52,8 +52,12 @@
 }
 
 .page-post a {
-  text-decoration:none;
-  color: #000000;
+  color: #17579fa9;
+  margin: 0 2px;
+  /* border-bottom: 1px solid #000000; */
+}
+.page-post a:hover {
+  color:rgba(0, 255, 128, 0.235);
   margin: 0 2px;
   /* border-bottom: 1px solid #000000; */
 }
