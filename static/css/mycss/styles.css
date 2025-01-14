@@ -1,0 +1,81 @@
+/* 通用重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 设置基础样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 顶部头部样式 */
+header {
+    background-color: #0078d4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* 主体部分样式 */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* 网站链接区样式 */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* 单个链接项样式 */
+.link-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 120px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.link-item:hover {
+    transform: translateY(-5px);
+}
+
+.link-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.link-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.link-item span {
+    display: block;
+    font-size: 16px;
+}
+
+/* 底部样式 */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
