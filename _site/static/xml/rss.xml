@@ -5,10 +5,24 @@
     <link>https://deoncn.github.io/</link>
     <description>刘大尉</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 15 Jan 2025 08:09:07 +0800</pubDate>
-    <lastBuildDate>Wed, 15 Jan 2025 08:09:07 +0800</lastBuildDate>
-    <generator>Jekyll v4.3.2</generator>
+    <pubDate>Mon, 28 Apr 2025 16:32:12 +0800</pubDate>
+    <lastBuildDate>Mon, 28 Apr 2025 16:32:12 +0800</lastBuildDate>
+    <generator>Jekyll v4.4.1</generator>
     <atom:link href="https://deoncn.github.io//static/xml/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adobe Premiere Pro 解决弹窗</title>
+      <link>https://deoncn.github.io//posts/2025/02/02/This-unlicensed-adobe-app-will-be-disabled-soon.html</link>
+      <description>AdobePremierePro解决弹窗高级安全WindowsDefender防火墙》出站规则，阻止连接网络，特定软件入站规则，阻止连接网络，特定软件参考资料[“Thisunlicensedadobeappwillbedisabled...</description>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0800</pubDate>
+      <gui>https://deoncn.github.io//posts/2025/02/02/This-unlicensed-adobe-app-will-be-disabled-soon.html</gui>
+    </item>
+    <item>
+      <title>B站视频无损下载</title>
+      <link>https://deoncn.github.io//posts/2025/01/17/%E5%A6%82%E4%BD%95%E6%97%A0%E6%8D%9F%E5%90%88%E5%B9%B6-video.m4s-%E4%B8%8E-audio.m4s%E4%B8%BAmp4-%E6%96%87%E4%BB%B6.html</link>
+      <description>下载ffmpegffmpegshell`ffmpeg-ivideo.m4s-iaudio.m4s-codeccopyoutput.mp4`参考资料FFmpeg[DownloadFFmpeg][如何无损合并video.m4s与audio...</description>
+      <pubDate>Fri, 17 Jan 2025 00:00:00 +0800</pubDate>
+      <gui>https://deoncn.github.io//posts/2025/01/17/%E5%A6%82%E4%BD%95%E6%97%A0%E6%8D%9F%E5%90%88%E5%B9%B6-video.m4s-%E4%B8%8E-audio.m4s%E4%B8%BAmp4-%E6%96%87%E4%BB%B6.html</gui>
+    </item>
     <item>
       <title>在 WINDOWS 上安装 JEKYLL 的开发环境 Ruby 3.1.2</title>
       <link>https://deoncn.github.io//posts/2024/11/18/%E5%9C%A8-WINDOWS-%E4%B8%8A%E5%AE%89%E8%A3%85-JEKYLL-%E7%9A%84%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83-Ruby.html</link>
