@@ -6,6 +6,8 @@
 [![license](https://img.shields.io/github/license/Deoncn/deoncn.github.io)](https://github.com/Deoncn/deoncn.github.io/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/Deoncn/deoncn.github.io?style=social)](https://github.com/Deoncn/deoncn.github.io)
 
+A Simple  Jekyll Theme.
+
 简洁的 jekyll 主题（[GitHub 地址](https://github.com/Deoncn/deoncn.github.io)），简洁纯净(主题资源请求<20KB)，无任何框架，秒开页面，自适应，全文检索，夜间模式。
 
 [ HERE ](https://deoncn.github.io/)查看主题效果。
