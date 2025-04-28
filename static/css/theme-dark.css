@@ -28,7 +28,7 @@ html.dark img {
   filter: brightness(0.8) contrast(1.2);
 }
 html.dark .footer a {
-  color: #8b949e;
+  color: #875087;
 }
 
 html.dark.footer a:hover{

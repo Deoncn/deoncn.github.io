@@ -5,16 +5,14 @@ categories: [WEB]
 ---
  
 
-# RubyInstallers
-<img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Jekyll_%28software%29_Logo.png/120px-Jekyll_%28software%29_Logo.png" alt="大萧条" />
+# Main
 
-
-安装 RubyInstallers
-如果使用 Windows，有个不错的项目能帮你安装 Ruby：RubyInstaller。它能帮你在 Windows 中安装所需的所有 Ruby 开发环境。
-下载、运行，即可!
+1.  安装 <a href="https://rubyinstaller.org/downloads/archives/" target="blank">RubyInstallers+DEVKIT</a>.
+2. 根据自己的 Jekyll 选择安装对应的版本
+3. 安装完成后，gem install xxx Program.
+4. 配置解释器，启动应用。
 
 #### 参考资料
 
-- [*程序员最好的朋友RUBY*](https://www.ruby-lang.org/zh_cn/documentation/)
-- [*<a href="https://www.ruby-lang.org/zh_cn/documentation/installation/" target="blank">程序员最好的朋友 RUBY</a>*]
-- 
+- [*<a href="https://www.ruby-lang.org/zh_cn/downloads/" target="blank">程序员最好的朋友 RUBY</a>*]
+- [*<a href="https://rubyinstaller.org/downloads/archives/" target="blank">RubyInstaller for Windwos</a>*]
